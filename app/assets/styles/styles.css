@@ -1,5 +1,16 @@
 @import "normalize.css";
 @import "base/_variables";
 @import "base/_global";
+@import "modules/_header";
+@import "modules/_large-hero";
+@import "modules/_innovation";
+@import "modules/_services";
+@import "modules/_row";
+@import "modules/_site-footer";
+@import "modules/_contact-us";
+@import "modules/_btn";
+@import "modules/_social-icons";
+@import "modules/_prices";
+@import "modules/_about-us";
 
 

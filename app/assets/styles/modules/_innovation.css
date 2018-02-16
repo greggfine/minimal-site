@@ -1,0 +1,13 @@
+.innovation {
+		max-width: 1200px;
+		margin: auto;
+		text-align: center;
+		
+	.innovation-wrapper {
+		border: 1px solid;
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-rows: 50% 50%;
+	}
+}
+

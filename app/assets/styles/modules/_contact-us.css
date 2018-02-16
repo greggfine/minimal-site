@@ -1,0 +1,12 @@
+.contact-us {
+		margin: auto;
+		text-align: center;
+		padding: 60px 0;
+		width: 100%;
+		border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+
+		&__text-content {
+			margin: 2.5rem auto;
+			max-width: 34.375rem;
+		}
+}

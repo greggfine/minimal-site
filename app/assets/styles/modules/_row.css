@@ -1,0 +1,13 @@
+.row {
+	&__large-4 {
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: space-around;
+	}
+
+	&__large-2 {
+		display: flex;
+		flex-flow: row nowrap;
+		justify-content: space-around;
+	}
+}

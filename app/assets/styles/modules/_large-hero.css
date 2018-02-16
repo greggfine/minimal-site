@@ -1,0 +1,8 @@
+.large-hero {
+	background-color: $bgGrey;
+
+	&__image {
+		width: 50%;
+		display: block;
+	}
+}

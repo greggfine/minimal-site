@@ -3,6 +3,7 @@ body {
 	padding: 0;
 	box-sizing: border-box;
 	font: 16px Arial, sans-serif;
+	/*background-color: $lightBlue;*/
 }
 
 .container {

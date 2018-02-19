@@ -1,5 +1,5 @@
 .large-hero {
-	background-color: $bgGrey;
+	background-color: $lightGrey;
 
 	&__image {
 		width: 50%;

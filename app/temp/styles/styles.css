@@ -456,6 +456,7 @@ body {
 	-webkit-box-sizing: border-box;
 	        box-sizing: border-box;
 	font: 16px Arial, sans-serif;
+	/*background-color: $lightBlue;*/
 }
 
 .container {
@@ -466,14 +467,13 @@ body {
 header {
 	position: fixed;
 	height: 10px;
-	color: rgb(103, 106, 107);
+	color: #6AB1FB;
 	width: 100%;
-	font-size: 0.6rem;
 }
 
 nav {
-		background-color: #eee;
-		border-bottom: 0.1px solid rgb(103, 106, 107);
+		background-color: #FEFEFF;
+		border-bottom: 0.1px solid #535F68;
 		display: -webkit-box;
 		display: -ms-flexbox;
 		display: flex;
@@ -507,11 +507,13 @@ nav ul {
 nav li {
 			display: inline;
 			padding: 20px;
+			font-size: 0.8125rem;
+			font-weight: 500;
 		}
 
 nav li a {
 				text-decoration: none;
-				color: rgb(103, 106, 107);
+				color: #535F68;
 				-webkit-transition: color 200ms;
 				transition: color 200ms;
 		}
@@ -530,7 +532,7 @@ nav i:hover {
 		}
 
 .large-hero {
-	background-color: #dcdcdc;
+	background-color: #A1BEDB;
 }
 
 .large-hero__image {
@@ -542,6 +544,8 @@ nav i:hover {
 		max-width: 1200px;
 		margin: auto;
 		text-align: center;
+		color: #535F68;
+		background-color: #FEFEFF;
 }
 
 .innovation .innovation-wrapper {
@@ -553,23 +557,23 @@ nav i:hover {
 
 .services {
 	height: 600px;
- 	background-color: #ccc;
+ 	background-color: #FEFEFF;
 	text-align: center;
 }
 
 .services__block-quote {
-		color: rgb(103, 106, 107);
+		color: #535F68;
 		max-width: 1000px;
 		text-align: left;
 		padding-left: 80px;
 	}
 
 .services__block-quote-author {
-		color: rgb(39, 43, 43);
+		color: #2D4F73;
 	}
 
 .services__feature {
-		background-color: #dcdcdc;
+		background-color: #FEFEFF;
 		border: 1px solid rgba(0, 0, 0, 0.2);
 		height: 370px;
 		-webkit-box-flex: 0;
@@ -604,7 +608,17 @@ nav i:hover {
 
 .site-footer {
 	text-align: center;
+	max-width: 390px;
+
 }
+
+@media (min-width: 530px) {
+
+.site-footer {	
+		max-width: 100%
+
+}
+	}
 
 .contact-us {
 		margin: auto;
@@ -638,7 +652,7 @@ nav i:hover {
 
 .prices {
 	height: 800px;
-	background-color: #dcdcdc;
+	background-color: #A1BEDB;
 }
 
 .prices__plan {

@@ -1,6 +1,6 @@
 .prices {
 	height: 800px;
-	background-color: $bgGrey;
+	background-color: $lightGrey;
 
 	&__plan {
 		text-align: center;

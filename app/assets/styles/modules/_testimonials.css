@@ -1,0 +1,11 @@
+.testimonials {
+	height: 800px;
+	background-color: $htLightGreen;
+
+	&__items {
+		display: flex;
+		flex-flow: column wrap;
+		align-items: center;
+	}
+	
+}

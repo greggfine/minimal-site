@@ -1,0 +1,12 @@
+.tutorials{
+
+	.course-grid {
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: flex-start;
+	}
+
+	.course-grid a {
+		flex-basis: 25%;
+	}
+}

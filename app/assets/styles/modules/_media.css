@@ -1,0 +1,28 @@
+.media {
+	height: 600px;
+ 	background-color: $htWhite;
+	text-align: center;
+
+	&__block-quote {
+		color: $htDarkGrey;
+		max-width: 1000px;
+		text-align: left;
+		padding-left: 80px;
+	}
+
+	&__block-quote-author {
+		color: $htDarkGreen;
+	}
+
+	&__feature {
+		background-color: $htWhite;
+		border: 1px solid rgba(0, 0, 0, 0.2);
+		height: 370px;
+		flex: 0 0 20%;
+		margin: 10px;
+	}
+
+	&__title {
+		color: $htMediumGreen;
+	}
+}

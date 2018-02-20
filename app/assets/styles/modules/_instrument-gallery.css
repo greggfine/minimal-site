@@ -1,0 +1,13 @@
+.instrument-gallery {
+
+	&__grid {
+		display: flex;
+		flex-flow: row wrap;
+	}
+}
+
+.instrument-gallery__grid img {
+
+			flex-basis: 50px;
+
+}

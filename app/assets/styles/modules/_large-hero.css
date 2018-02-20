@@ -1,8 +1,43 @@
 .large-hero {
-	background-color: $lightGrey;
+	background-color: $htLightGrey;
 
 	&__image {
-		width: 50%;
 		display: block;
+		width: 100%;
+		height: auto;
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -9,6 +9,10 @@ body {
 	margin: auto;
 }
 
+.wrapper {
+	margin-bottom: 400px;
+}
+
 
 * {
 	box-sizing: border-box;

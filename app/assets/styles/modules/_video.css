@@ -1,8 +1,18 @@
 .video {
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: space-between;
-	background-color: $htWhite;
+
+	&__grid {
+		max-width: 1700px;
+		margin: 0 auto;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+		background-color: $htWhite;
+	}
+
+	&__title {
+		text-align: center;
+		color: $htMediumGreen;
+	}
 
 	iframe {
 		margin: 10px;

@@ -5,6 +5,8 @@
 } .container {
 	width: 1200px;
 	margin: auto;
+} .wrapper {
+	margin-bottom: 400px;
 } * {
 	-webkit-box-sizing: border-box;
 	        box-sizing: border-box;
@@ -64,7 +66,8 @@
 		height: auto;
 	} .about {
 		max-width: 1200px;
-		margin: auto;
+		margin-left: auto;
+		margin-right: auto;
 		text-align: center;
 		color: #1D1D1D;
 		background-color: #F5F5F5;
@@ -324,7 +327,16 @@
 		-ms-flex-preferred-size: 0 0 1;
 		    flex-basis: 0 0 1;
 		margin: 10px;
-	} .instrument-gallery__grid {
+	} .credits {
+	background-image: url("./roberta-sorge-125543-unsplash.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+} .credits__title {
+		text-align: center;
+		color: #5f7030;
+	} .video__grid {
+		max-width: 1700px;
+		margin: 0 auto;
 		display: -webkit-box;
 		display: -ms-flexbox;
 		display: flex;
@@ -332,31 +344,18 @@
 		-webkit-box-direction: normal;
 		    -ms-flex-flow: row wrap;
 		        flex-flow: row wrap;
-	} .instrument-gallery__grid img {
-
-			-ms-flex-preferred-size: 50px;
-
-			    flex-basis: 50px;
-
-} .credits {
-	/*background-color: $htWhite;*/
-	background-image: url("./roberta-sorge-125543-unsplash.jpg");
-	background-size: cover;
-	background-repeat: no-repeat;
-} .video {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-orient: horizontal;
-	-webkit-box-direction: normal;
-	    -ms-flex-flow: row wrap;
-	        flex-flow: row wrap;
-	-webkit-box-pack: justify;
-	    -ms-flex-pack: justify;
-	        justify-content: space-between;
-	background-color: #F5F5F5;
-} .video iframe {
+		-webkit-box-pack: justify;
+		    -ms-flex-pack: justify;
+		        justify-content: space-between;
+		background-color: #F5F5F5;
+	} .video__title {
+		text-align: center;
+		color: #5f7030;
+	} .video iframe {
 		margin: 10px;
-	}
+	} .divider {
+	background-color: #C9DD4B;
+	height: 135px;
+}
 
 

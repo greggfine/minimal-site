@@ -1,6 +1,10 @@
 .credits {
-	/*background-color: $htWhite;*/
 	background-image: url("./roberta-sorge-125543-unsplash.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
+
+	&__title {
+		text-align: center;
+		color: $htMediumGreen;
+	}
 }

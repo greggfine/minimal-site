@@ -1,12 +1,21 @@
 .tutorials{
 
+	h1 {
+		color: $htMediumGreen;
+		text-align: center;
+	}
+
 	.course-grid {
+		max-width: 1700px;
+		margin: 0 auto;
 		display: flex;
 		flex-flow: row wrap;
 		justify-content: flex-start;
 	}
 
 	.course-grid a {
-		flex-basis: 25%;
+		flex-basis: 0 0 1;
+		margin: 10px;
 	}
+
 }

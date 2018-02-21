@@ -1,9 +1,7 @@
 body {
 	margin: 0;
 	padding: 0;
-	box-sizing: border-box;
 	font: 16px Arial, sans-serif;
-	/*background-color: $lightBlue;*/
 }
 
 .container {
@@ -11,4 +9,8 @@ body {
 	margin: auto;
 }
 
+
+* {
+	box-sizing: border-box;
+}
 

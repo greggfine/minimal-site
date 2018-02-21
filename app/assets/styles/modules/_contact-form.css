@@ -1,0 +1,33 @@
+.contact-form {
+	max-width: 600px;
+	margin: auto;
+	display: flex;
+	flex-flow: column;
+
+	input {
+		outline: none;
+		font-size: 1.5rem;
+		background-color: $htWhite;
+		padding: 10px;
+		border-radius: 7px;
+		margin-bottom: 20px;
+	}
+
+	::placeholder {
+		color: $htMediumGreen;
+	}
+
+
+	textarea {
+		outline: none;
+		color: $htMediumGreen;
+		font-size: 1.5rem;
+		margin-bottom: 20px;
+	}
+
+	input[type="submit"] {
+		padding: 1rem 2rem;
+		width: 200px;
+		margin: auto;
+	}
+}

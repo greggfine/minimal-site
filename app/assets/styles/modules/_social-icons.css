@@ -1,7 +1,9 @@
 .social-icons {
 	text-align: center;
-
+	background-color: $htDarkGrey;
+	
 	&__icon {
+		color: $htLightGreen;
 		padding: 20px;
 	}
 }

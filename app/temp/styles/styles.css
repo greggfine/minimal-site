@@ -351,9 +351,48 @@
 	} .video__title {
 		text-align: center;
 		color: #5f7030;
-	} .video iframe {
-		margin: 10px;
-	} .divider {
+	} .video .green-box {
+		background-color: #999999;
+		height: 205px;
+		margin-bottom: 20px;
+	} .video .green-box iframe {
+		-webkit-transition: all .10s ease-in-out;
+		transition: all .10s ease-in-out;
+
+	} .video .green-box:hover iframe {
+		opacity: .3;
+		-webkit-filter: grayscale(100%);
+		        filter: grayscale(100%);
+	} /*
+
+
+
+div.item:hover img {
+  opacity: 0.3;
+  filter: grayscale(100%);
+}
+
+div.item * {
+  transition: all .35s ease-in-out;
+}
+
+div.item i {
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 300ms 0ms cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+
+div.item:hover i {
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 300ms 100ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+ 
+
+
+
+
+
+
+*/ .divider {
 	background-color: #C9DD4B;
 	height: 135px;
 } .contact-form {

@@ -1,4 +1,39 @@
 .divider {
-	background-color: $htLightGreen;
-	height: 135px;
+	background-color: $htNewGreen2;
+	height: 235px;
+	position: relative;
+	z-index: 1;
 }
+
+.divider:nth-of-type(odd) {
+	background-color: $htNewGreen;
+}
+
+/*.divider:nth-of-type(even):after {
+	background: inherit;
+	bottom: 0;
+	content: '';
+	display: block;
+	height: 50%;
+	left: 0;
+	position: absolute;
+	right: 0;
+	transform: skewY(-2.5deg);
+	transform-origin: 100%;
+	z-index: -1;
+}
+
+.divider:nth-of-type(odd):after {
+	background: inherit;
+	bottom: 0;
+	content: '';
+	display: block;
+	height: 50%;
+	left: 0;
+	position: absolute;
+	right: 0;
+	transform: skewY(0deg);
+	transform-origin: -100%;
+	z-index: -1;
+}*/
+

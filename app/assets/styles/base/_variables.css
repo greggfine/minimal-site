@@ -1,9 +1,16 @@
-$htLightGreen: #C9DD4B; /*rgb(201, 221, 75)*/
-$htMediumGreen: #5f7030; 	/*rgb(95, 112, 48)*/
-$htDarkGreen: #3D481E;  /*rgb(61, 72, 30)*/
-$htLightGrey: #999999; /*rgb(153, 153, 153)*/
-$htMediumGrey: #333333;  	 /*rgb(51, 51, 51)*/
-$htDarkGrey: #1D1D1D;  /*rgb(29, 29, 29)*/
+$htLightGreen: #C9DD4B; 
+$htMediumGreen: #5f7030; 	
+$htDarkGreen: #c;  
+$htLightGrey: #999999; 
+$htMediumGrey: #333333;  	 
+$htDarkGrey: #1D1D1D;  
 $htBlack: rgb(0, 1, 0);
-$htBlackOpacity: rgba(0, 1, 0, 0.93);
-$htWhite: #F5F5F5;   /*rgb(245, 245, 245)*/
+$htBlackOpacity: rgba(0, 1, 0, 0.88);
+$htWhite: #F5F5F5;   
+$htYellow: #e3d34d;
+$htNewGreen: #8ACD46;
+$htNewGreen2: #3D481E;
+
+
+#040406
+#82705D

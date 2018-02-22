@@ -1,7 +1,7 @@
 body {
 	margin: 0;
 	padding: 0;
-	font: 16px Arial, sans-serif;
+	font: 16px 'Heebo', 'Arial', sans-serif;
 }
 
 .container {
@@ -10,7 +10,8 @@ body {
 }
 
 .wrapper {
-	margin-bottom: 400px;
+	padding-top: 100px;
+	margin-bottom: 100px;
 }
 
 

@@ -1,9 +1,10 @@
 header {
 	position: fixed;
-	height: 10px;
+	height: 0px;
 	color: $htLightGreen;
 	width: 100%;
 	letter-spacing: 5px;
+	z-index: 2;
 }
 
 nav {
@@ -12,13 +13,15 @@ nav {
 		flex-flow: row nowrap;
 		align-items: center;
 		justify-content: space-around;	
+		padding: 20px;
 
 		h1 {
 			flex: 0 0 300px;
+			font-size: 1.67rem;
+			font-weight: 400;
 		}
 
 		ul {
-			padding-right: 200px;
 			list-style-type: none;
 			min-width: 450px;
 			justify-content: space-between;
@@ -27,7 +30,7 @@ nav {
 		li {
 			display: inline;
 			padding: 20px;
-			font-size: 0.8125rem;
+			font-size: 1.15rem;
 			font-weight: 500;
 		}
 

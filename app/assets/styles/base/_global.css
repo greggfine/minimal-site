@@ -9,9 +9,19 @@ body {
 	margin: auto;
 }
 
+.container--large {
+	width: 1800px;
+	margin: auto;
+}
+
+.container__credits {
+	width: 1800px;
+	margin: auto;
+}
+
 .wrapper {
 	padding-top: 100px;
-	margin-bottom: 100px;
+	margin-bottom: 200px;
 }
 
 

@@ -1,7 +1,8 @@
 .testimonials{
 	overflow: hidden;
-	height: 150px;
-	background-color: $htLightGreen;
+	height: 250px;
+	/*background-color: $htLightGreen;*/
+	background-color: $htWhite;
 	text-align: center;
 }
 
@@ -24,13 +25,16 @@
 }
 
 .testimonials h2 {
-	color: $htDarkGrey;
+	padding-top: 60px;
+	color: $htDarkGreen;
+	font-size: 1.8rem;
 }
 
 .testimonials p {
 	max-width: 800px;
 	margin: 0 auto;
 	font-style: italic;
+	margin-bottom: 60px;
 }
 
 

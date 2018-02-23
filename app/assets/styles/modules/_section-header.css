@@ -1,11 +1,18 @@
 .section-header {
-	color: $htLightGreen;
+	color: $htMediumGreen;
 	font-size: 2.5rem;
 	border-bottom: 2px solid $htNewGreen2;
 	border-top: 2px solid $htNewGreen2;
 	width: 300px;
 	margin: 0  auto 40px auto;
 	text-align: center;
+
+	&__instruments {
+		color: $htMediumGrey;
+		/*color: $htLightGreen;*/
+		border-bottom: 2px solid $htWhite;
+		border-top: 2px solid $htWhite;
+	}
 }
 
 

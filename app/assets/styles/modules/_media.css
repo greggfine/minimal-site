@@ -1,6 +1,6 @@
 .media {
 	height: 600px;
- 	background-color: $htWhite;
+ 	/*background-color: $htWhite;*/
 	text-align: center;
 
 	&__block-quote {

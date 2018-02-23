@@ -2,9 +2,42 @@
 	background-image: url("./roberta-sorge-125543-unsplash.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
+	display: flex;
+	
 
 	&__title {
 		text-align: center;
 		color: $htMediumGreen;
 	}
+
+	&__list {
+	float: left;
+	width: 50%;
+	/*margin-right: 30px;*/
+	padding: 60px;
+	background-color: $htWhite;
+	}
+
+	&__instruments-list {
+		float: left;
+		background-color: $htDarkGreen;
+		color: $htWhite;
+		width: 50%;
+		text-align: center;
+		/*border: 1px solid;*/
+		padding: 60px;
+
+	}
+
+	ul {
+		list-style-type: none;
+	}
+
+
+}
+
+.credits::after {
+	display: table;
+	content: "";
+	clear: both;
 }

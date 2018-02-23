@@ -4,7 +4,7 @@
 		margin-right: auto;
 		text-align: center;
 		color: $htDarkGrey;
-		background-color: $htWhite;
+		/*background-color: $htWhite;*/
 
 		&__header {
 			color: $htMediumGreen;
@@ -12,6 +12,15 @@
 
 		&__profile-pic {
 			
+		}
+
+		p {
+			font-size: 1.5rem;
+		}
+
+		&__icon {
+			margin-bottom: 40px;
+			width: 10%;
 		}
 }
 

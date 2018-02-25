@@ -1,24 +1,32 @@
 .divider {
-	background-color: $htWhite;
-	background: url('https://images.unsplash.com/photo-1478800907959-cd1621fbd465?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=1b54d9bf7706ac19ffb99a97d1b00742&auto=format&fit=crop&w=2550&q=80') center left no-repeat;
-	background-size: cover;
-	filter: grayscale(75%);
+
 	height: 235px;
 	position: relative;
 	z-index: 1;
+
+	&--first {
+		background: url('../../assets/images/unsplash/roberta-sorge-125543-unsplash.jpg') 50% 50% no-repeat;
+		/* Photo by Roberta Sorge on Unsplash */
+		filter: grayscale(100%);
+		background-size: cover;
+		background-color: $htLightGreen;
+		background-blend-mode: color-burn;
+	}
+
+	&--second {
+		background-color: $htWhite;
+		background: url('../../assets/images/unsplash/cristian-guanipa-161134-unsplash.jpg') center left no-repeat;
+		/* Photo by Cristian Guanipa on Unsplash */
+		background-size: cover;
+		filter: grayscale(75%);
+	}
+
+	&--third {
+		background: url('../../assets/images/unsplash/scott-gruber-41185-unsplash.jpg') 0% 20% no-repeat;
+		/* Photo by Scott Gruber on Unsplash */
+		background-size: cover;
+		background-color: $htMediumGrey;
+		background-blend-mode: color-dodge;
+	}
 }
 
-.first-divider {
-	background: url('https://images.unsplash.com/photo-1471523835123-1172efe5eaa1?ixlib=rb-0.3.5&s=bcd08c5866c9df4f5f5f1d6f48c83d81&auto=format&fit=crop&w=800&q=60') 50% 50% no-repeat;
-	filter: grayscale(100%);
-	background-size: cover;
-	background-color: $htLightGreen;
-	background-blend-mode: color-burn;
-}
-
-.third-divider {
-	background: url('https://images.unsplash.com/photo-1445743432342-eac500ce72b7?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a75b52f1402d260bc387f986992ef602&auto=format&fit=crop&w=2550&q=80') 0% 20% no-repeat;
-	background-size: cover;
-	background-color: $htMediumGrey;
-	background-blend-mode: color-dodge;
-}

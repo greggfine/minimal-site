@@ -1,4 +1,16 @@
 .page-section {
-	padding-top: 100px;
-	margin-bottom: 200px;
+	margin-bottom: 60px;
+	padding-top: 60px;
+
+	@mixin atSmall {
+		padding-top: 100px;
+		margin-bottom: 100px;
+	}
+
+	&--tutorials {
+		@mixin atSmall {
+			padding-top: 30px;
+			margin-bottom: 100px;
+		}
+	}
 }

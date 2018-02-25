@@ -1,10 +1,22 @@
 .container {
-	width: 1200px;
+
+	width: 700px;
 	margin: auto;
+
+	@mixin atSmall {
+		width: 1200px;
+		margin: auto;
+	}
+
+	&--small {
+		width: 100%;
+		margin: auto;
+	}
 
 	&--large {
 		width: 1800px;
 		margin: auto;
 	}
+
 }
 

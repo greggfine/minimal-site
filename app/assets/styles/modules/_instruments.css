@@ -1,8 +1,12 @@
-.instruments {
-	float: left;
+.instruments {	
 	background-color: $htDarkGreen;
 	color: $htWhite;
-	width: 50%;
+	width: 100%;
 	text-align: center;
 	padding: 60px;
+
+	@mixin atMedium {
+		float: left;
+		width: 50%;
+	}
 }

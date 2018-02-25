@@ -3,12 +3,22 @@
 	background-size: cover;
 	background-repeat: no-repeat;
 	display: flex;
-	
+	flex-direction: column;
+
+	@mixin atMedium {
+		flex-direction: row;
+	}
+
 	&__list {
-		float: left;
-		width: 50%;
+		float: none;
+		width: 100%;
 		padding: 60px;
 		background-color: $htWhite;
+
+		@mixin atMedium {
+			float: left;
+			width: 50%;
+		}
 	}
 
 	ul {

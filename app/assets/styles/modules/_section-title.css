@@ -4,8 +4,12 @@
 	border-bottom: 2px solid $htNewGreen2;
 	border-top: 2px solid $htNewGreen2;
 	width: 300px;
-	margin: 0 auto 40px;
+	margin: 0 auto 60px;
 	text-align: center;
+
+	@mixin atSmall {
+		margin: 0 auto 80px;
+	}
 
 	&--instruments {
 		color: $htMediumGrey;

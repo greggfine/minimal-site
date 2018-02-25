@@ -1,21 +1,25 @@
 .tutorials{
 
-	.course-grid {
-		max-width: 1800px;
-		margin: 0 auto;
-		display: flex;
-		flex-flow: row wrap;
-		justify-content: center;
+	&__course-grid {
+		
 
-		a {
-			flex-basis: 0 0 1;
-			margin: 30px;
-		}
+		@mixin atSmall {
+			max-width: 1800px;
+			margin: 0 auto;
+			display: flex;
+			flex-flow: row wrap;
+			justify-content: center;
 
-		img {
-			width: 75%;
-			box-shadow: 6px 5px 5px 1px $htLightGrey;
-			
+			a {
+				flex-basis: 0 0 1;
+				margin: 30px;
+			}
+
+			img {
+				width: 75%;
+				box-shadow: 6px 5px 5px 1px $htLightGrey;
+				
+			}
 		}
 	}
 }

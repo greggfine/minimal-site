@@ -1,0 +1,8 @@
+.instruments {
+	float: left;
+	background-color: $htDarkGreen;
+	color: $htWhite;
+	width: 50%;
+	text-align: center;
+	padding: 60px;
+}

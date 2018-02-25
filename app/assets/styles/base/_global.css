@@ -1,31 +1,10 @@
+* {
+	box-sizing: border-box;
+}
+
 body {
 	margin: 0;
 	padding: 0;
 	font: 16px 'Heebo', 'Arial', sans-serif;
-}
-
-.container {
-	width: 1200px;
-	margin: auto;
-}
-
-.container--large {
-	width: 1800px;
-	margin: auto;
-}
-
-.container__credits {
-	width: 1800px;
-	margin: auto;
-}
-
-.wrapper {
-	padding-top: 100px;
-	margin-bottom: 200px;
-}
-
-
-* {
-	box-sizing: border-box;
 }
 

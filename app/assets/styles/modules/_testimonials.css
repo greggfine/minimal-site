@@ -1,7 +1,6 @@
 .testimonials{
 	overflow: hidden;
 	height: 250px;
-	/*background-color: $htLightGreen;*/
 	background-color: $htWhite;
 	text-align: center;
 }

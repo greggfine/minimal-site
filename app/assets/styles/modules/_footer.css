@@ -1,6 +1,5 @@
-.site-footer {
+.footer {
 	text-align: center;
-	/*max-width: 390px;*/
 	color: $htWhite;
 	background-color: $htDarkGrey;
 	padding: 20px;
@@ -8,5 +7,4 @@
 	@mixin atSmall {	
 		max-width: 100%;
 	}
-
 }

@@ -1,19 +1,45 @@
-.contact-us {
+.contact {
 		margin: 100px auto;
 		text-align: center;
 		padding: 60px 0;
 		width: 100%;
 		border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-
 		background: url('https://images.unsplash.com/photo-1496076232753-a1ec7904dc18?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=eb1274735683d116bcf2634ff6883139&auto=format&fit=crop&w=2550&q=80https://images.unsplash.com/photo-1496076232753-a1ec7904dc18?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=eb1274735683d116bcf2634ff6883139&auto=format&fit=crop&w=2550&q=80') center left no-repeat;
 		background-size: cover;
-		/*filter: grayscale(90%);*/
 		background-color: $htMediumGrey;
 		background-blend-mode: color-dodge;
 
+		&__form {
+			max-width: 600px;
+			margin: auto;
+			display: flex;
+			flex-flow: column;
 
-		&__text-content {
-			margin: 2.5rem auto;
-			max-width: 34.375rem;
+			input {
+				outline: none;
+				font-size: 1.5rem;
+				background-color: $htWhite;
+				padding: 10px;
+				border-radius: 7px;
+				margin-bottom: 20px;
+			}
+
+			::placeholder {
+				color: $htMediumGreen;
+			}
+
+
+			textarea {
+				outline: none;
+				color: $htMediumGreen;
+				font-size: 1.5rem;
+				margin-bottom: 20px;
+			}
+
+			input[type="submit"] {
+				padding: 1rem 2rem;
+				width: 200px;
+				margin: auto;
+			}
 		}
 }

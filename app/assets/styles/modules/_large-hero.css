@@ -1,6 +1,4 @@
 .large-hero {
-	background-color: $htLightGrey;
-
 	&__image {
 		display: block;
 		width: 100%;
@@ -8,37 +6,3 @@
 		filter: grayscale(45%);
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

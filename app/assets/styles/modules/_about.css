@@ -1,26 +1,11 @@
 .about {
-		max-width: 1200px;
-		margin-left: auto;
-		margin-right: auto;
-		text-align: center;
-		color: $htDarkGrey;
-		/*background-color: $htWhite;*/
+	max-width: 1200px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	color: $htDarkGrey;
 
-		&__header {
-			color: $htMediumGreen;
-		}
-
-		&__profile-pic {
-			
-		}
-
-		p {
-			font-size: 1.5rem;
-		}
-
-		&__icon {
-			margin-bottom: 40px;
-			width: 10%;
-		}
+	&__text-content {
+		font-size: 1.5rem;
+	}
 }
-

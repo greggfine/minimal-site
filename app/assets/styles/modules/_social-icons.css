@@ -3,7 +3,12 @@
 	background-color: $htDarkGrey;
 	
 	&__icon {
-		color: $htLightGreen;
+		color: $htWhite;
 		padding: 20px;
+	}
+
+	&__icon:hover {
+		color: $htLightGreen;
+		transform: scale(1.2);
 	}
 }

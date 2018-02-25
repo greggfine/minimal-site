@@ -1,0 +1,10 @@
+.container {
+	width: 1200px;
+	margin: auto;
+
+	&--large {
+		width: 1800px;
+		margin: auto;
+	}
+}
+

@@ -33,7 +33,7 @@ body {
 .btn {
 	text-decoration: none;
 	border: 1px solid #000;
-	color: #C9DD4B;
+	color: #61892f;
 	padding: .75rem 2rem;
 	margin-right: 20px;
 	margin-left: 20px;
@@ -59,26 +59,49 @@ body {
 			-webkit-box-direction: normal;
 			    -ms-flex-flow: column;
 			        flex-flow: column;
+			/*border: 10px solid red;*/
+			background-color: rgba(0, 0, 0, .7);
+			padding: 20px;
 		} 
 .contact__form input {
 				outline: none;
 				font-size: 1.5rem;
-				background-color: #F5F5F5;
+				/*background-color: $htWhite;*/
 				padding: 10px;
-				border-radius: 7px;
+				/*border-radius: 7px;*/
 				margin-bottom: 20px;
 			} 
 .contact__form ::-webkit-input-placeholder {
 				color: #5f7030;
+				text-indent: 10px;
 			} 
 .contact__form :-ms-input-placeholder {
 				color: #5f7030;
+				text-indent: 10px;
 			} 
 .contact__form ::-ms-input-placeholder {
 				color: #5f7030;
+				text-indent: 10px;
 			} 
 .contact__form ::placeholder {
 				color: #5f7030;
+				text-indent: 10px;
+			} 
+.contact__form textarea::-webkit-input-placeholder {
+				padding-top: 20px;
+				text-indent: 18px;
+			} 
+.contact__form textarea:-ms-input-placeholder {
+				padding-top: 20px;
+				text-indent: 18px;
+			} 
+.contact__form textarea::-ms-input-placeholder {
+				padding-top: 20px;
+				text-indent: 18px;
+			} 
+.contact__form textarea::placeholder {
+				padding-top: 20px;
+				text-indent: 18px;
 			} 
 .contact__form textarea {
 				outline: none;
@@ -366,6 +389,9 @@ body {
 		border-bottom: 2px solid #F5F5F5;
 		border-top: 2px solid #F5F5F5;
 	} 
+.section-title--contact {
+		background-color: rgba(255, 255, 255, .85);
+	} 
 .social-icons {
 	text-align: center;
 	background-color: #1D1D1D;
@@ -381,7 +407,7 @@ body {
 	} 
 .testimonials{
 	overflow: hidden;
-	height: 250px;
+	height: 360px;
 	background-color: #F5F5F5;
 	text-align: center;
 } 
@@ -398,11 +424,11 @@ body {
 	width: 500%;
 	margin: 0;
 	left: 0;
-	-webkit-animation: 20s slidy infinite;
-	        animation: 20s slidy infinite;
+	-webkit-animation: 70s slidy infinite;
+	        animation: 70s slidy infinite;
 } 
 .testimonials h2 {
-	padding-top: 60px;
+	padding-top: 50px;
 	color: #61892f;
 	font-size: 1.8rem;
 } 
@@ -410,7 +436,7 @@ body {
 	max-width: 800px;
 	margin: 0 auto;
 	font-style: italic;
-	margin-bottom: 60px;
+	margin-bottom: 0px;
 } 
 @-webkit-keyframes slidy {
 	0% {
@@ -479,7 +505,6 @@ body {
 	96% {
 		left: 0%;
 	}
-
 } 
 @keyframes slidy {
 	0% {
@@ -548,7 +573,38 @@ body {
 	96% {
 		left: 0%;
 	}
-
+} 
+blockquote {
+    font-family: Georgia, serif;
+    font-size: 18px;
+    font-style: italic;
+    width: 800px;
+    /*margin: 0.25em 0;*/
+    margin: 0 auto;
+    padding: 0.35em 40px;
+    line-height: 1.85;
+    position: relative;
+    color: #383838;
+    text-align: left;
+} 
+blockquote:before {
+    display: block;
+    padding-left: 10px;
+    content: "\201C";
+    font-size: 80px;
+    position: absolute;
+    left: -20px;
+    top: -20px;
+    color: #7a7a7a;
+} 
+blockquote cite {
+    color: #999999;
+    font-size: 14px;
+    display: block;
+    margin-top: 5px;
+} 
+blockquote cite:before {
+    content: "\2014 \2009";
 } 
 .tutorials__course-grid img {
 			width: 100%;
@@ -596,9 +652,12 @@ body {
 		background-color: #F5F5F5;
 	} 
 .video__wrapper {
-		background-color: #999999;
+		/*background-color: $htLightGrey;*/
+		/*background-color: palegreen;*/
+		/*background-color: springgreen;*/
+		background-color: limegreen;
 		height: 205px;
-		margin-bottom: 20px;
+		margin-bottom: 60px;
 	} 
 .video__wrapper .video__item {
 		-webkit-transition: all .10s ease-in-out;

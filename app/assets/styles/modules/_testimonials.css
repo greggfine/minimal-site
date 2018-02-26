@@ -1,6 +1,6 @@
 .testimonials{
 	overflow: hidden;
-	height: 250px;
+	height: 360px;
 	background-color: $htWhite;
 	text-align: center;
 }
@@ -20,11 +20,11 @@
 	width: 500%;
 	margin: 0;
 	left: 0;
-	animation: 20s slidy infinite;
+	animation: 70s slidy infinite;
 }
 
 .testimonials h2 {
-	padding-top: 60px;
+	padding-top: 50px;
 	color: $htDarkGreen;
 	font-size: 1.8rem;
 }
@@ -33,7 +33,7 @@
 	max-width: 800px;
 	margin: 0 auto;
 	font-style: italic;
-	margin-bottom: 60px;
+	margin-bottom: 0px;
 }
 
 
@@ -104,5 +104,41 @@
 	96% {
 		left: 0%;
 	}
+}
 
+
+blockquote {
+    font-family: Georgia, serif;
+    font-size: 18px;
+    font-style: italic;
+    width: 800px;
+    /*margin: 0.25em 0;*/
+    margin: 0 auto;
+    padding: 0.35em 40px;
+    line-height: 1.85;
+    position: relative;
+    color: #383838;
+    text-align: left;
+}
+
+blockquote:before {
+    display: block;
+    padding-left: 10px;
+    content: "\201C";
+    font-size: 80px;
+    position: absolute;
+    left: -20px;
+    top: -20px;
+    color: #7a7a7a;
+}
+
+blockquote cite {
+    color: #999999;
+    font-size: 14px;
+    display: block;
+    margin-top: 5px;
+}
+
+blockquote cite:before {
+    content: "\2014 \2009";
 }

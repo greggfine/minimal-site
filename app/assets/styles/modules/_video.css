@@ -8,9 +8,12 @@
 	}
 
 	&__wrapper {
-		background-color: $htLightGrey;
+		/*background-color: $htLightGrey;*/
+		/*background-color: palegreen;*/
+		/*background-color: springgreen;*/
+		background-color: limegreen;
 		height: 205px;
-		margin-bottom: 20px;
+		margin-bottom: 60px;
 	}
 
 	&__wrapper &__item {

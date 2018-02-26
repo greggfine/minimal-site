@@ -14,18 +14,27 @@
 			margin: auto;
 			display: flex;
 			flex-flow: column;
+			/*border: 10px solid red;*/
+			background-color: rgba(0, 0, 0, .7);
+			padding: 20px;
 
 			input {
 				outline: none;
 				font-size: 1.5rem;
-				background-color: $htWhite;
+				/*background-color: $htWhite;*/
 				padding: 10px;
-				border-radius: 7px;
+				/*border-radius: 7px;*/
 				margin-bottom: 20px;
 			}
 
 			::placeholder {
 				color: $htMediumGreen;
+				text-indent: 10px;
+			}
+
+			textarea::placeholder {
+				padding-top: 20px;
+				text-indent: 18px;
 			}
 
 

@@ -104,12 +104,12 @@ body {
 
 }
 	} 
-.container--small {
+/*&--small {
 		width: 100%;
 		margin: auto;
-	} 
+	}*/ 
 .container--large {
-		width: 1800px;
+		max-width: 1800px;
 		margin: auto;
 	} 
 .credits {
@@ -550,10 +550,14 @@ body {
 	}
 
 } 
+.tutorials__course-grid img {
+			width: 100%;
+			margin: 0 auto;
+		} 
 @media (min-width: 530px) { 
 .tutorials__course-grid {
-			max-width: 1800px;
-			margin: 0 auto;
+			/*max-width: 1800px;
+			margin: 0 auto;*/
 			display: -webkit-box;
 			display: -ms-flexbox;
 			display: flex;
@@ -561,9 +565,8 @@ body {
 			-webkit-box-direction: normal;
 			    -ms-flex-flow: row wrap;
 			        flex-flow: row wrap;
-			-webkit-box-pack: center;
-			    -ms-flex-pack: center;
-			        justify-content: center
+			-ms-flex-pack: distribute;
+			    justify-content: space-around
 	}
 
 			.tutorials__course-grid a {
@@ -580,8 +583,6 @@ body {
 			}
 	} 
 .video__grid {
-		max-width: 1700px;
-		margin: 0 auto;
 		display: -webkit-box;
 		display: -ms-flexbox;
 		display: flex;

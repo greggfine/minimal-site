@@ -2,13 +2,17 @@
 
 	&__course-grid {
 		
+		img {
+			width: 100%;
+			margin: 0 auto;
+		}
 
 		@mixin atSmall {
-			max-width: 1800px;
-			margin: 0 auto;
+			/*max-width: 1800px;
+			margin: 0 auto;*/
 			display: flex;
 			flex-flow: row wrap;
-			justify-content: center;
+			justify-content: space-around;
 
 			a {
 				flex-basis: 0 0 1;

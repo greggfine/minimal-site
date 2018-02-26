@@ -233,6 +233,9 @@ body {
 			display: block
 	}
 	} 
+.header__menu--is-visible {
+			display: block;
+		} 
 .header__nav {
 		background-color: rgba(0, 1, 0, 0.96);
 		display: -webkit-box;

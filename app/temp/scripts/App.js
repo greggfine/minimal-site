@@ -50,14 +50,9 @@
 
 	var _MobileMenu2 = _interopRequireDefault(_MobileMenu);
 
-	var _RevealOnScroll = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"./modules/RevealOnScroll\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
-
-	var _RevealOnScroll2 = _interopRequireDefault(_RevealOnScroll);
-
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	var mobileMenu = new _MobileMenu2.default();
-	var revealOnScroll = new _RevealOnScroll2.default();
 
 /***/ },
 /* 1 */

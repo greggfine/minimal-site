@@ -23,15 +23,15 @@
 				<div class="header__menu-icon__middle"></div>
 			</div>
 			<ul class="header__menu">
-				<li class="header__menu-item"><a href="#" class="header__menu-item-anchor">About</a></li>
+				<li class="header__menu-item"><a href="#about" class="header__menu-item-anchor" id="about-link">About</a></li>
 				<span class="header__menu-item-dot"></span>
-				<li class="header__menu-item"><a href="#" class="header__menu-item-anchor">Video</a></li>
+				<li class="header__menu-item"><a href="#video" class="header__menu-item-anchor" id="video-link">Video</a></li>
 				<span class="header__menu-item-dot"></span>
-				<li class="header__menu-item"><a href="#" class="header__menu-item-anchor">Audio</a></li>
+				<li class="header__menu-item"><a href="#audio" class="header__menu-item-anchor" id="audio-link">Audio</a></li>
 				<span class="header__menu-item-dot"></span>
-				<li class="header__menu-item"><a href="#" class="header__menu-item-anchor">Tutorials</a></li>
+				<li class="header__menu-item"><a href="#tutorials" class="header__menu-item-anchor" id="tutorials-link">Tutorials</a></li>
 				<span class="header__menu-item-dot"></span>
-				<li class="header__menu-item"><a href="#" class="header__menu-item-anchor">Contact</a></li>
+				<li class="header__menu-item"><a href="#contact" class="header__menu-item-anchor" id="contact-link">Contact</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -41,7 +41,7 @@
 		<!-- Photo by Gabriel Gurrola on Unsplash -->
 	</div>
 
-	<section class="about page-section">
+	<section class="about page-section" data-matching-link="#about-link" id="about">
 		<h2 class="section-title">ABOUT</h2>
 		<img src="assets/images/Gregg-Fine-profile-picture.jpg" alt="Gregg Fine profile picture" title="Gregg Fine" class="about__image">
 		<p class="about__text-content">makes the music that helps you build your brand. Hidden Tiger Music’s composer/producer Gregg Fine believes in the power of music to take picture to a new level, heighten emotions, and sometimes just provide a cool underscore. It’s about helping you achieve your vision. Sometimes that starts at the beginning of a project-pulling tracks and finding a direction-discovering musical solutions that create emotional impact and help tell a story. With a diligent and reliable work ethic, Hidden Tiger Music stands by you through the various life-stages of a project, ultimately delivering a unique, high-end, and often unexpected score.</p>
@@ -49,7 +49,7 @@
 
 
 
-	<section class="credits page-section container--large">
+	<section class="credits container--large">
 		<div class="credits__list">
 			<h1 class="section-title">CREDITS</h1>
 			
@@ -107,7 +107,7 @@
 	<div class="divider divider--first"></div>
 	
 
-	<section class="video page-section container--large">
+	<section class="video page-section container--large" data-matching-link="#video-link" id="video">
 		<h1 class="section-title">VIDEO</h1>
 		<div class="video__grid">
 			
@@ -146,14 +146,14 @@
 
 	<div class="divider divider--second"></div>
 
-	<section class="audio container--large page-section">
+	<section class="audio container--large page-section" data-matching-link="#audio-link" id="audio">
 		<h1 class="section-title">AUDIO</h1>
 
 		<iframe class="audio__soundcloud-player" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/users/2613924&amp;color=%23c9dd4b&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;show_teaser=true"></iframe>
 
 	</section><!-- END AUDIO -->
 
-	<section class="tutorials page-section--tutorials container--large">
+	<section class="tutorials page-section page-section--tutorials container--large" data-matching-link="#tutorials-link" id="tutorials">
 
 		<h1 class="section-title">TUTORIALS</h1>
 
@@ -216,7 +216,7 @@
 
 	</section>
 
-	<div class="contact">
+	<div class="contact page-section" data-matching-link="#contact-link" id="contact">
 		<h1 class="section-title section-title--contact">CONTACT</h1>
 		<form action="" class="contact__form">
 			<input type="text" placeholder="name">

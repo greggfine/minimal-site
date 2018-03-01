@@ -74,6 +74,12 @@
 		text-decoration: none;
 		color: $htWhite;
 		transition: color 100ms;
+
+		@mixin atMedium {
+			&.is-current-link {
+				color: $htLightGreen;
+			}
+		}
 	}
 
 	&__menu-item-anchor:hover {

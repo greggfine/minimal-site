@@ -278,6 +278,11 @@ body {
 	color: #F5F5F5;
 	transition: color 100ms;
 } 
+@media (min-width: 800px) { 
+	.header__menu-item-anchor.is-current-link {
+		color: #C9DD4B;
+	}
+} 
 .header__menu-item-anchor:hover {
 	color: #C9DD4B;
 } 

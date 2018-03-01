@@ -1,10 +1,18 @@
 .header {
-	position: fixed;
+	
 	color: $htLightGreen;
 	width: 100%;
 	letter-spacing: 0.3125rem;
 	z-index: 2;
 	box-shadow: 0px 0px 9px 0px #5a5656;
+
+	@mixin atMedium {
+		position: fixed;
+
+		&--dark {
+			color: red;
+		}
+	}
 
 	&--is-expanded {
 		color: red;

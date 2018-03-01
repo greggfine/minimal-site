@@ -199,12 +199,20 @@ body {
 	}
 } 
 .header {
-	position: fixed;
+	
 	color: #C9DD4B;
 	width: 100%;
 	letter-spacing: 0.3125rem;
 	z-index: 2;
 	box-shadow: 0px 0px 9px 0px #5a5656;
+} 
+@media (min-width: 800px) { 
+	.header {
+		position: fixed;
+	} 
+	.header--dark {
+		color: red;
+	}
 } 
 .header--is-expanded {
 	color: red;

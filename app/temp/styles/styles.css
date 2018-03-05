@@ -18,6 +18,11 @@ body {
 } 
 .about__text-content {
 	font-size: 1.5rem;
+	max-width: 800px;
+	margin: auto; 
+	/*line-height: 2;*/ 
+	/*line-height: normal;*/
+	line-height: 180%;
 } 
 .audio__soundcloud-player {
 	width: 100%;
@@ -198,20 +203,16 @@ body {
 		max-width: 100%;
 	}
 } 
-.header {
-	
+.header {	
 	color: #C9DD4B;
 	width: 100%;
-	letter-spacing: 0.3125rem;
+	letter-spacing: 0.2125rem;
 	z-index: 2;
 	box-shadow: 0px 0px 9px 0px #5a5656;
 } 
 @media (min-width: 800px) { 
 	.header {
 		position: fixed;
-	} 
-	.header--dark {
-		color: red;
 	}
 } 
 .header--is-expanded {
@@ -219,6 +220,7 @@ body {
 } 
 .header__menu {
 	display: none;
+	animation: fadeIn 2s ease-in;
 } 
 @media (min-width: 530px) { 
 	.header__menu {
@@ -238,32 +240,42 @@ body {
 	    align-items: center;
 	-ms-flex-pack: start;
 	    justify-content: flex-start;
-	padding: 0.25rem;
 } 
+/*padding: 0.25rem;*/ 
 @media (min-width: 530px) { 
 	.header__nav {
 		-ms-flex-pack: distribute;
 		    justify-content: space-around;
 	}
 } 
+.header__full-title {
+	animation: fadeIn 1.5s;
+} 
 .header__title {
 	-ms-flex: 0 0 100px;
 	    flex: 0 0 100px;
 	font-size: 1.47rem;
+	letter-spacing: 6px;
 	font-weight: 300;
 } 
 @media (min-width: 530px) { 
 	.header__title {
 		-ms-flex: 0 0 400px;
 		    flex: 0 0 400px;
-		font-size: 2.4rem;
+		font-size: 2.5rem;
 		text-align: center;
 	}
 } 
+.header__title-guitar {
+	font-weight: 200; 
+	/*color: $htWhite;*/
+	color: #c0bdbd;
+	font-size: 2.2rem;
+} 
 .header__menu-item {
 	display: inline;
-	padding: 1.25rem;
-	font-size: 1.15rem;
+	padding: 1.25rem; 
+	/*font-size: 1.15rem;*/
 	font-weight: 200;
 } 
 .header__menu-item-dot {
@@ -338,6 +350,14 @@ body {
 @media (min-width: 800px) { 
 	.header__menu-icon {
 		display: none;
+	}
+} 
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
 	}
 } 
 .instruments {	

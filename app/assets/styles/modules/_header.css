@@ -4,6 +4,7 @@
 	letter-spacing: 0.2125rem;
 	z-index: 2;
 	box-shadow: 0px 0px 9px 0px #5a5656;
+	
 
 	@mixin atMedium {
 		position: fixed;
@@ -36,6 +37,7 @@
 	
 		@mixin atSmall {
 			justify-content: space-around;
+
 		}
 	}
 

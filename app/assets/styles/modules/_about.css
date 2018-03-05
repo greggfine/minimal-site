@@ -4,9 +4,11 @@
 	margin-right: auto;
 	text-align: center;
 	color: $htDarkGrey;
+	padding-top: 100px;
 
 	&__image {
 		width: 50%;
+		border-radius: 2%;
 	}
 
 	&__text-content {

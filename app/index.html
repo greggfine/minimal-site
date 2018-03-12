@@ -222,16 +222,18 @@
 
 	</section>
 
-	<div class="contact page-section" data-matching-link="#contact-link" id="contact">
-		<h1 class="section-title section-title--contact">CONTACT</h1>
-		<form action="" class="contact__form">
-			<input type="text" placeholder="name">
-			<input type="email" placeholder="email">
-			<input type="telephone" placeholder="phone">
-			<textarea name="" id="" cols="30" rows="10" placeholder="your message"></textarea>
-			<input type="submit" class="btn">
-		</form>
-	</div><!-- END CONTACT US -->
+<div class="contact page-section" data-matching-link="#contact-link" id="contact">
+	<h1 class="section-title section-title--contact">CONTACT</h1>
+	<form action="send" method="POST" class="contact__form">
+		<input type="text" placeholder="name" name="name">
+		<input type="email" placeholder="email" name="email">
+		<input type="telephone" placeholder="phone" name="phone">
+		<textarea name="" id="" cols="30" rows="10" placeholder="your message" name="message"></textarea>
+		<input type="submit" class="btn">
+	</form>
+</div><!-- END CONTACT US -->
+
+
 
 	<footer class="footer">
 		<h1 class="footer__title">Gregg Fine</h1>

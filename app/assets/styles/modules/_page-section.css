@@ -3,8 +3,8 @@
 	padding-top: 60px;
 
 	@mixin atSmall {
-		padding-top: 100px;
-		margin-bottom: 100px;
+		padding-top: 200px;
+		margin-bottom: 200px;
 	}
 
 	&--tutorials {

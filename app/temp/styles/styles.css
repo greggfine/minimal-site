@@ -13,18 +13,23 @@ body {
 	text-align: center;
 	color: #1D1D1D;
 	padding-top: 100px;
+	padding-bottom: 60px;
+
 } 
+/*background-color: $htLightGreen;*/ 
 .about__image {
+	margin-top: 60px;
 	width: 50%;
-	border-radius: 2%;
+	box-shadow: 12px 11px 10px 0px #000000d1; 
+	/*border-radius: 2%;*/
 } 
 .about__text-content {
 	font-size: 1.5rem;
-	max-width: 800px;
+	max-width: 1000px;
 	margin: auto;
-	/*line-height: 2;*/
-	/*line-height: normal;*/
+	text-align: center;
 	line-height: 180%;
+	color: rgb(0, 1, 0);
 } 
 .audio__soundcloud-player {
 	width: 100%;
@@ -62,16 +67,16 @@ body {
 	display: -ms-flexbox;
 	display: flex;
 	-ms-flex-flow: column;
-	    flex-flow: column;
+	    flex-flow: column; 
 	/*border: 10px solid red;*/
 	background-color: rgba(0, 0, 0, .7);
 	padding: 20px;
 } 
 .contact__form input {
 	outline: none;
-	font-size: 1.5rem;
+	font-size: 1.5rem; 
 	/*background-color: $htWhite;*/
-	padding: 10px;
+	padding: 10px; 
 	/*border-radius: 7px;*/
 	margin-bottom: 20px;
 } 
@@ -138,6 +143,7 @@ body {
 	display: flex;
 	-ms-flex-direction: column;
 	    flex-direction: column;
+	padding-bottom: 180px;
 } 
 @media (min-width: 800px) { 
 	.credits {
@@ -172,7 +178,7 @@ body {
 	z-index: 1;
 } 
 .divider--first {
-	background: url('../../assets/images/unsplash/roberta-sorge-125543-unsplash.jpg') 50% 50% no-repeat;
+	background: url('../../assets/images/unsplash/roberta-sorge-125543-unsplash.jpg') 50% 50% no-repeat; 
 	/* Photo by Roberta Sorge on Unsplash */
 	-webkit-filter: grayscale(100%);
 	        filter: grayscale(100%);
@@ -182,18 +188,20 @@ body {
 } 
 .divider--second {
 	background-color: #F5F5F5;
-	background: url('../../assets/images/unsplash/cristian-guanipa-161134-unsplash.jpg') center left no-repeat;
+	background: url('../../assets/images/unsplash/cristian-guanipa-161134-unsplash.jpg') center left no-repeat; 
 	/* Photo by Cristian Guanipa on Unsplash */
 	background-size: cover;
 	-webkit-filter: grayscale(75%);
 	        filter: grayscale(75%);
 } 
 .divider--third {
-	background: url('../../assets/images/unsplash/scott-gruber-41185-unsplash.jpg') 0% 20% no-repeat;
+	background: url('../../assets/images/unsplash/scott-gruber-41185-unsplash.jpg') 0% 20% no-repeat; 
 	/* Photo by Scott Gruber on Unsplash */
 	background-size: cover;
 	background-color: #333333;
 	background-blend-mode: color-dodge;
+	-webkit-filter: grayscale(100%);
+	        filter: grayscale(100%);
 } 
 .footer {
 	text-align: center;
@@ -267,7 +275,7 @@ body {
 	    flex: 0 0 100px;
 	font-size: 1.47rem;
 	letter-spacing: 6px;
-	font-weight: 300;
+	font-weight: 400;
 } 
 @media (min-width: 530px) { 
 	.header__title {
@@ -278,14 +286,14 @@ body {
 	}
 } 
 .header__title-guitar {
-	font-weight: 200;
+	font-weight: 200; 
 	/*color: $htWhite;*/
 	color: #c0bdbd;
 	font-size: 2.2rem;
 } 
 .header__menu-item {
 	display: inline;
-	padding: 1.25rem;
+	padding: 1.25rem; 
 	/*font-size: 1.15rem;*/
 	font-weight: 200;
 } 
@@ -404,8 +412,8 @@ body {
 } 
 @media (min-width: 530px) { 
 	.page-section {
-		padding-top: 100px;
-		margin-bottom: 100px;
+		padding-top: 200px;
+		margin-bottom: 200px;
 	}
 } 
 @media (min-width: 530px) { 
@@ -453,7 +461,8 @@ body {
 	background-color: rgba(255, 255, 255, .85);
 } 
 .section-title--about {
-	margin-top: 100px;
+	margin-top: 160px;
+	color: #5f7030;
 } 
 .social-icons {
 	text-align: center;
@@ -604,7 +613,7 @@ blockquote cite:before {
 	margin: 0 auto;
 } 
 @media (min-width: 530px) { 
-	.tutorials__course-grid {
+	.tutorials__course-grid { 
 		/*max-width: 1800px;
 			margin: 0 auto;*/
 		display: -ms-flexbox;
@@ -634,10 +643,6 @@ blockquote cite:before {
 	background-color: #F5F5F5;
 } 
 .video__wrapper {
-	/*background-color: $htLightGrey;*/
-	/*background-color: palegreen;*/
-	/*background-color: springgreen;*/
-	background-color: limegreen;
 	height: 205px;
 	margin-bottom: 60px;
 } 
@@ -645,9 +650,10 @@ blockquote cite:before {
 	transition: all .10s ease-in-out;
 } 
 .video__wrapper:hover .video__item {
-	opacity: .3;
-	-webkit-filter: grayscale(100%);
-	        filter: grayscale(100%);
+	opacity: .7;
+	-webkit-filter: grayscale(40%);
+	        filter: grayscale(40%);
+	transform: scale(1.005);
 } 
 .reveal-item {
 	opacity: 0;

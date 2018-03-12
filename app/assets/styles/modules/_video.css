@@ -8,10 +8,6 @@
 	}
 
 	&__wrapper {
-		/*background-color: $htLightGrey;*/
-		/*background-color: palegreen;*/
-		/*background-color: springgreen;*/
-		background-color: limegreen;
 		height: 205px;
 		margin-bottom: 60px;
 	}
@@ -21,7 +17,8 @@
 	}
 
 	&__wrapper:hover &__item {
-		opacity: .3;
-		filter: grayscale(100%);
+		opacity: .7;
+		filter: grayscale(40%);
+		transform: scale(1.005);
 	}
 }

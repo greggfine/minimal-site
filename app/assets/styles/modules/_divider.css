@@ -27,6 +27,7 @@
 		background-size: cover;
 		background-color: $htMediumGrey;
 		background-blend-mode: color-dodge;
+		filter: grayscale(100%);
 	}
 }
 

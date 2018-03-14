@@ -5,23 +5,22 @@
 	text-align: center;
 	color: $htDarkGrey;
 	padding-top: 100px;
-	padding-bottom: 60px;
-	/*background-color: $htLightGreen;*/
+	/*padding-bottom: 60px;*/
 
 	&__image {
 		margin-top: 60px;
 		width: 50%;
 		box-shadow: 12px 11px 10px 0px #000000d1;
-		/*border-radius: 2%;*/
 	}
 
 	&__text-content {
+		padding-top: 40px;
 		font-size: 1.5rem;
 		max-width: 1000px;
 		margin: auto;
+		margin-bottom: -80px;
 		text-align: center;
 		line-height: 180%;
 		color: $htBlack;
 	}
-
 }

@@ -13,6 +13,8 @@
 			display: flex;
 			flex-flow: row wrap;
 			justify-content: space-around;
+			padding-top: 120px;
+			margin-bottom: 190px;
 
 			a {
 				flex-basis: 0 0 1;

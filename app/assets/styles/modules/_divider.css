@@ -11,6 +11,8 @@
 		background-size: cover;
 		background-color: $htLightGreen;
 		background-blend-mode: color-burn;
+		margin-top: 50px;
+		margin-bottom: 30px;
 	}
 
 	&--second {
@@ -19,6 +21,8 @@
 		/* Photo by Cristian Guanipa on Unsplash */
 		background-size: cover;
 		filter: grayscale(75%);
+		margin-top: -30px;
+		margin-bottom: 20px;
 	}
 
 	&--third {
@@ -28,6 +32,7 @@
 		background-color: $htMediumGrey;
 		background-blend-mode: color-dodge;
 		filter: grayscale(100%);
+		margin-bottom: 130px;
 	}
 }
 

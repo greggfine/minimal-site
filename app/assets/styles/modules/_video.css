@@ -4,7 +4,8 @@
 		display: flex;
 		flex-flow: row wrap;
 		justify-content: space-between;
-		background-color: $htWhite;
+		/*background-color: $htWhite;*/
+		padding-top: 100px;
 	}
 
 	&__wrapper {
@@ -20,5 +21,9 @@
 		opacity: .7;
 		filter: grayscale(40%);
 		transform: scale(1.005);
+	}
+
+	&__item {
+		margin: 40px;
 	}
 }

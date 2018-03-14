@@ -3,10 +3,11 @@
 		width: 100%;
 		height: 450px;
 
-
 		@mixin atSmall {
 			width: 100%;
 			height: 450px;
+			margin-top: 144px;
+			margin-bottom: -10px;
 		}
 	}
 }

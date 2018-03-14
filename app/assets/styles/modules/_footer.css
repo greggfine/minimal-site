@@ -3,17 +3,22 @@
 	color: $htWhite;
 	background-color: $htDarkGrey;
 	padding: 20px;
+	font-size: 1.1rem;
+	letter-spacing: 1.3px;
 
 	@mixin atSmall {	
 		max-width: 100%;
+		margin-top: -70px;
 	}
 
 	&__title {
 		color: $htLightGreen;
+		letter-spacing: 4px;
+		font-weight: 400;
 	}
 
 	&__email {
-		color: $htLightGreen;
+		/*color: $htLightGreen;*/
 	}
 
 

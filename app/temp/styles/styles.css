@@ -13,20 +13,19 @@ body {
 	text-align: center;
 	color: #1D1D1D;
 	padding-top: 100px;
-	padding-bottom: 60px;
-
 } 
-/*background-color: $htLightGreen;*/ 
+/*padding-bottom: 60px;*/ 
 .about__image {
 	margin-top: 60px;
 	width: 50%;
-	box-shadow: 12px 11px 10px 0px #000000d1; 
-	/*border-radius: 2%;*/
+	box-shadow: 12px 11px 10px 0px #000000d1;
 } 
 .about__text-content {
+	padding-top: 40px;
 	font-size: 1.5rem;
 	max-width: 1000px;
 	margin: auto;
+	margin-bottom: -80px;
 	text-align: center;
 	line-height: 180%;
 	color: rgb(0, 1, 0);
@@ -39,6 +38,8 @@ body {
 	.audio__soundcloud-player {
 		width: 100%;
 		height: 450px;
+		margin-top: 144px;
+		margin-bottom: -10px;
 	}
 } 
 .btn {
@@ -50,10 +51,11 @@ body {
 	margin-left: 20px;
 } 
 .contact {
-		margin: 100px auto;
+		margin: 130px auto;
 		text-align: center;
 		padding: 60px 0;
 		width: 100%;
+		height: 1000px;
 		border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 		background: url('../../assets/images/unsplash/maite-tiscar-271141-unsplash.jpg') center left no-repeat;
 		/* Photo by Maite Tiscar on Unsplash */
@@ -185,6 +187,8 @@ body {
 	background-size: cover;
 	background-color: #C9DD4B;
 	background-blend-mode: color-burn;
+	margin-top: 50px;
+	margin-bottom: 30px;
 } 
 .divider--second {
 	background-color: #F5F5F5;
@@ -193,6 +197,8 @@ body {
 	background-size: cover;
 	-webkit-filter: grayscale(75%);
 	        filter: grayscale(75%);
+	margin-top: -30px;
+	margin-bottom: 20px;
 } 
 .divider--third {
 	background: url('../../assets/images/unsplash/scott-gruber-41185-unsplash.jpg') 0% 20% no-repeat; 
@@ -202,32 +208,38 @@ body {
 	background-blend-mode: color-dodge;
 	-webkit-filter: grayscale(100%);
 	        filter: grayscale(100%);
+	margin-bottom: 130px;
 } 
 .footer {
 	text-align: center;
 	color: #F5F5F5;
 	background-color: #1D1D1D;
 	padding: 20px;
+	font-size: 1.1rem;
+	letter-spacing: 1.3px;
 
 
 } 
 @media (min-width: 530px) { 
 	.footer {
 		max-width: 100%;
+		margin-top: -70px;
 	}
 } 
 .footer__title {
 	color: #C9DD4B;
+	letter-spacing: 4px;
+	font-weight: 400;
 } 
-.footer__email {
-	color: #C9DD4B;
+.footer__email { 
+	/*color: $htLightGreen;*/
 } 
 .header {	
 	color: #C9DD4B;
 	width: 100%;
 	letter-spacing: 0.2125rem;
 	z-index: 2;
-	box-shadow: 0px 0px 9px 0px #5a5656;
+	box-shadow: 0px 3px 30px 0px #5a5656;
 } 
 @media (min-width: 800px) { 
 	.header {
@@ -458,10 +470,12 @@ body {
 	border-top: 2px solid #F5F5F5;
 } 
 .section-title--contact {
+	margin-top: -95px;
+	margin-bottom: 100px;
 	background-color: rgba(255, 255, 255, .85);
 } 
 .section-title--about {
-	margin-top: 160px;
+	margin-top: 130px;
 	color: #5f7030;
 } 
 .social-icons {
@@ -469,16 +483,17 @@ body {
 	background-color: #1D1D1D;
 } 
 .social-icons__icon {
-	color: #F5F5F5;
-	padding: 20px;
+	color: #61892f;
+	padding: 0px 20px 50px 20px;
 } 
 .social-icons__icon:hover {
-	color: #C9DD4B;
+	color: #C9DD4B; 
+	/*color: $htWhite;*/
 	transform: scale(1.2);
 } 
 .testimonials{
 	overflow: hidden;
-	height: 360px;
+	height: 375px;
 	background-color: #F5F5F5;
 	text-align: center;
 } 
@@ -622,6 +637,8 @@ blockquote cite:before {
 		    flex-flow: row wrap;
 		-ms-flex-pack: distribute;
 		    justify-content: space-around;
+		padding-top: 120px;
+		margin-bottom: 190px;
 	} 
 	.tutorials__course-grid a {
 		-ms-flex-preferred-size: 0 0 1;
@@ -639,8 +656,9 @@ blockquote cite:before {
 	-ms-flex-flow: row wrap;
 	    flex-flow: row wrap;
 	-ms-flex-pack: justify;
-	    justify-content: space-between;
-	background-color: #F5F5F5;
+	    justify-content: space-between; 
+	/*background-color: $htWhite;*/
+	padding-top: 100px;
 } 
 .video__wrapper {
 	height: 205px;
@@ -654,6 +672,9 @@ blockquote cite:before {
 	-webkit-filter: grayscale(40%);
 	        filter: grayscale(40%);
 	transform: scale(1.005);
+} 
+.video__item {
+	margin: 40px;
 } 
 .reveal-item {
 	opacity: 0;

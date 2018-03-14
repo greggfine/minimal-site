@@ -51,7 +51,7 @@ body {
 	margin-left: 20px;
 } 
 .contact {
-		margin: 130px auto;
+		margin: 200px auto;
 		text-align: center;
 		padding: 60px 0;
 		width: 100%;
@@ -437,7 +437,7 @@ body {
 } 
 @media (min-width: 530px) { 
 	.page-section--tutorials {
-		padding-top: 30px;
+		padding-top: 160px;
 		margin-bottom: 100px;
 	}
 } 
@@ -477,7 +477,7 @@ body {
 	border-top: 2px solid #F5F5F5;
 } 
 .section-title--contact {
-	margin-top: -95px;
+	margin-top: -55px;
 	margin-bottom: 100px;
 	background-color: rgba(255, 255, 255, .85);
 } 

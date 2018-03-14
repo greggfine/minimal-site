@@ -18,7 +18,7 @@
 		font-size: 1.5rem;
 		max-width: 1000px;
 		margin: auto;
-		margin-bottom: -80px;
+		/*margin-bottom: -80px;*/
 		text-align: center;
 		line-height: 180%;
 		color: $htBlack;

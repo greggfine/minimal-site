@@ -11,19 +11,26 @@
 	}
 
 	&__list {
-		float: none;
+		/*float: none;*/
 		width: 100%;
 		padding: 60px;
-		background-color: $htWhite;
+		background-color: $htLightGreen;
 
 		@mixin atMedium {
-			float: left;
-			width: 50%;
+			/*float: left;*/
+			/*width: 50%;*/
+			list-style-type: none;
+			text-align: center;
+			color: $htNewGreen2;
+			line-height: 2;
+			font-size: 1.2rem;
+			font-weight: 800;
+			border-radius: 3%;
 		}
 	}
 
 	ul {
-		list-style-type: none;
+		/*list-style-type: none;*/
 	}
 }
 

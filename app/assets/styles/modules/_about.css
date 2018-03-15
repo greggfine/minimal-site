@@ -9,8 +9,20 @@
 
 	&__image {
 		margin-top: 60px;
-		width: 50%;
+		width: 40%;
 		box-shadow: 12px 11px 10px 0px #000000d1;
+
+		@mixin atMedium {
+			width: 50%;
+		}
+
+/*		@mixin atMedium-Large {
+			width: 50%;
+		}*/
+
+		@mixin atLarge {
+			width: 65%;
+		}
 	}
 
 	&__text-content {

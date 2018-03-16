@@ -40,13 +40,35 @@ body {
 } 
 .about__text-content {
 	padding-top: 40px;
-	font-size: 1.5rem;
-	max-width: 1000px;
+	font-size: 1.25rem;
+	max-width: 300px;
 	margin: auto; 
 	/*margin-bottom: -80px;*/
 	text-align: center;
 	line-height: 180%;
 	color: rgb(0, 1, 0);
+} 
+@media (min-width: 530px) { 
+	.about__text-content {
+		font-size: 1.4rem;
+		max-width: 500px;
+	}
+} 
+@media (min-width: 800px) { 
+	.about__text-content {
+		font-size: 1.5rem;
+		max-width: 600px;
+	}
+} 
+@media (min-width: 900px) { 
+	.about__text-content {
+		max-width: 800px;
+	}
+} 
+@media (min-width: 1300px) { 
+	.about__text-content {
+		max-width: 1000px;
+	}
 } 
 .audio__soundcloud-player {
 	width: 100%;
@@ -185,17 +207,14 @@ body {
 		    flex-direction: row;
 	}
 } 
-.credits__list { 
-	/*float: none;*/
+.credits__list {
 	width: 100%;
 	padding: 60px;
 	background-color: #C9DD4B;
+	list-style-type: none;
 } 
 @media (min-width: 800px) { 
-	.credits__list { 
-		/*float: left;*/ 
-		/*width: 50%;*/
-		list-style-type: none;
+	.credits__list {
 		text-align: center;
 		color: #474b4f;
 		line-height: 2;
@@ -203,9 +222,6 @@ body {
 		font-weight: 800;
 		border-radius: 3%;
 	}
-} 
-.credits ul { 
-	/*list-style-type: none;*/
 } 
 .credits::after {
 	display: table;

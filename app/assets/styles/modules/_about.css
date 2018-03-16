@@ -27,12 +27,30 @@
 
 	&__text-content {
 		padding-top: 40px;
-		font-size: 1.5rem;
-		max-width: 1000px;
+		font-size: 1.25rem;
+		max-width: 300px;
 		margin: auto;
 		/*margin-bottom: -80px;*/
 		text-align: center;
 		line-height: 180%;
 		color: $htBlack;
+
+		@mixin atSmall {
+			font-size: 1.4rem;
+			max-width: 500px;
+		}
+
+		@mixin atMedium {
+			font-size: 1.5rem;
+			max-width: 600px;
+		}
+
+		@mixin atMedium-Small {
+			max-width: 800px;
+		}
+
+		@mixin atLarge {
+			max-width: 1000px;
+		}
 	}
 }

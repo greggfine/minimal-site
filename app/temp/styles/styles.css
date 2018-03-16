@@ -50,29 +50,14 @@ body {
 } 
 .audio__soundcloud-player {
 	width: 100%;
-	height: 450px; 
-	/*
-		@mixin atMedium-Large {
-			width: 100%;
-			height: 450px;
-			margin-top: 144px;
-			margin-bottom: -10px;
-		}*/ 
-	/*		@mixin atLarge {
-			width: 100%;
-			height: 450px;
-			margin-top: 144px;
-			margin-bottom: -10px;
-		}*/
+	height: 450px;
+	padding-left: 20px;
+	padding-right: 20px;
 } 
 @media (min-width: 900px) { 
 	.audio__soundcloud-player {
-		width: 100%;
-		height: 450px;
 		margin-top: 144px;
-		margin-bottom: -10px; 
-		/*			margin-left: auto;
-			margin-right: auto;*/
+		margin-bottom: -10px;
 	}
 } 
 .btn {
@@ -154,7 +139,6 @@ body {
 
 	width: 700px;
 	margin: auto;
-
 } 
 @media (min-width: 530px) { 
 	.container {
@@ -162,13 +146,28 @@ body {
 		margin: auto;
 	}
 } 
-/*&--small {
-		width: 100%;
-		margin: auto;
-	}*/ 
 .container--large {
-	max-width: 1800px;
 	margin: auto;
+} 
+@media (min-width: 900px) { 
+	.container--large {
+		max-width: 500px;
+	}
+} 
+@media (min-width: 800px) { 
+	.container--large {
+		max-width: 1200px;
+	}
+} 
+@media (min-width: 1300px) { 
+	.container--large {
+		max-width: 1500px;
+	}
+} 
+@media (min-width: 1800px) { 
+	.container--large {
+		max-width: 1700px;
+	}
 } 
 .credits {
 	background-image: url("./roberta-sorge-125543-unsplash.jpg");

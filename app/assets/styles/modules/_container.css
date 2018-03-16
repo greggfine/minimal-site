@@ -8,16 +8,23 @@
 		margin: auto;
 	}
 
-	/*&--small {
-		width: 100%;
-		margin: auto;
-	}*/
-
 	&--large {
-		max-width: 1800px;
 		margin: auto;
 
+		@mixin atMedium-Small {
+			max-width: 500px;
+		}
+
+		@mixin atMedium {
+			max-width: 1200px;
+		}
+
+		@mixin atLarge {
+			max-width: 1500px;
+		}
+
+		@mixin atExtra-Large {
+			max-width: 1700px;
+		}
 	}
-
 }
-

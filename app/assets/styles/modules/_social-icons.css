@@ -5,11 +5,15 @@
 	&__icon {
 		color: $htDarkGreen;
 		padding: 0px 20px 50px 20px;
+		font-size: 1.5rem;
+
+		@mixin atMedium {
+			font-size: 2rem;
+		}
 	}
 
 	&__icon:hover {
 		color: $htLightGreen;
-		/*color: $htWhite;*/
 		transform: scale(1.2);
 	}
 }

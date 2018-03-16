@@ -254,10 +254,8 @@ body {
 	color: #F5F5F5;
 	background-color: #1D1D1D;
 	padding: 20px;
-	font-size: 1.1rem;
+	font-size: .9rem;
 	letter-spacing: 1.3px;
-
-
 } 
 @media (min-width: 530px) { 
 	.footer {
@@ -265,13 +263,19 @@ body {
 		margin-top: -70px;
 	}
 } 
+@media (min-width: 800px) { 
+	.footer {
+		font-size: 1.1rem;
+	}
+} 
 .footer__title {
 	color: #C9DD4B;
 	letter-spacing: 4px;
 	font-weight: 400;
 } 
-.footer__email { 
-	/*color: $htLightGreen;*/
+.footer__phone a{
+	color: #C9DD4B;
+	text-decoration: none;
 } 
 .header {	
 	color: #C9DD4B;
@@ -586,10 +590,15 @@ body {
 .social-icons__icon {
 	color: #61892f;
 	padding: 0px 20px 50px 20px;
+	font-size: 1.5rem;
+} 
+@media (min-width: 800px) { 
+	.social-icons__icon {
+		font-size: 2rem;
+	}
 } 
 .social-icons__icon:hover {
-	color: #C9DD4B; 
-	/*color: $htWhite;*/
+	color: #C9DD4B;
 	transform: scale(1.2);
 } 
 .testimonials{

@@ -724,27 +724,33 @@ blockquote cite {
 blockquote cite:before {
     content: "\2014 \2009";
 } 
-.tutorials__course-grid img {
-	width: 100%;
-	margin: 0 auto;
+.tutorials__wrapper {
+	width: 75vw;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+} 
+.tutorials__course-grid {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-direction: column;
+	    flex-direction: column;
+	-ms-flex-align: center;
+	    align-items: center;
+	margin-bottom: 190px;
+} 
+.tutorials__course-grid a {
+	margin: 10px 0px;
 } 
 @media (min-width: 530px) { 
-	.tutorials__course-grid { 
-		/*max-width: 1800px;
-			margin: 0 auto;*/
-		display: -ms-flexbox;
-		display: flex;
+	.tutorials__course-grid {
 		-ms-flex-flow: row wrap;
 		    flex-flow: row wrap;
 		-ms-flex-pack: distribute;
 		    justify-content: space-around;
-		padding-top: 120px;
-		margin-bottom: 190px;
 	} 
 	.tutorials__course-grid a {
-		-ms-flex-preferred-size: 0 0 1;
-		    flex-basis: 0 0 1;
-		margin: 30px;
+		margin: 40px 0px;
 	} 
 	.tutorials__course-grid img {
 		width: 75%;

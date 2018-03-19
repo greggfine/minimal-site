@@ -9,11 +9,12 @@
 
 	&__image {
 		margin-top: 60px;
-		width: 40%;
-		box-shadow: 12px 11px 10px 0px #000000d1;
+		width: 85%;
+		box-shadow: 4px 8px 10px 0px #000000d1;
 
 		@mixin atMedium {
 			width: 50%;
+			box-shadow: 12px 11px 10px 0px #000000d1;
 		}
 
 /*		@mixin atMedium-Large {

@@ -22,12 +22,13 @@ body {
 /*padding-bottom: 60px;*/ 
 .about__image {
 	margin-top: 60px;
-	width: 40%;
-	box-shadow: 12px 11px 10px 0px #000000d1;
+	width: 85%;
+	box-shadow: 4px 8px 10px 0px #000000d1;
 } 
 @media (min-width: 800px) { 
 	.about__image {
 		width: 50%;
+		box-shadow: 12px 11px 10px 0px #000000d1;
 	}
 } 
 /*		@mixin atMedium-Large {
@@ -540,8 +541,6 @@ body {
 .page-section {
 	margin-bottom: 60px;
 	padding-top: 60px;
-
-
 } 
 @media (min-width: 530px) { 
 	.page-section {
@@ -573,16 +572,30 @@ body {
 } 
 .section-title {
 	color: #5f7030;
-	font-size: 2.5rem;
+	font-size: 1.6rem;
 	border-bottom: 2px solid #474b4f;
 	border-top: 2px solid #474b4f;
-	width: 300px;
+	width: 130px;
 	margin: 0 auto 60px;
 	text-align: center;
 } 
 @media (min-width: 530px) { 
 	.section-title {
 		margin: 0 auto 80px;
+		font-size: 1.85rem;
+		width: 165px;
+	}
+} 
+@media (min-width: 800px) { 
+	.section-title {
+		font-size: 2.1rem;
+		width: 200px;
+	}
+} 
+@media (min-width: 1300px) { 
+	.section-title {
+		font-size: 2.5rem;
+		width: 300px;
 	}
 } 
 .section-title--instruments {
@@ -594,10 +607,44 @@ body {
 	margin-top: -55px;
 	margin-bottom: 100px;
 	background-color: rgba(255, 255, 255, .85);
+	width: 150px;
+} 
+@media (min-width: 530px) { 
+	.section-title--contact {
+		width: 200px;
+	}
+} 
+@media (min-width: 800px) { 
+	.section-title--contact {
+		width: 250px;
+	}
+} 
+@media (min-width: 1300px) { 
+	.section-title--contact {
+		width: 300px;
+	}
 } 
 .section-title--about {
 	margin-top: 130px;
 	color: #5f7030;
+} 
+.section-title__tutorials {
+	width: 160px;
+} 
+@media (min-width: 530px) { 
+	.section-title__tutorials {
+		width: 200px;
+	}
+} 
+@media (min-width: 800px) { 
+	.section-title__tutorials {
+		width: 250px;
+	}
+} 
+@media (min-width: 1300px) { 
+	.section-title__tutorials {
+		width: 300px;
+	}
 } 
 .social-icons {
 	text-align: center;

@@ -11,18 +11,28 @@
 	}
 
 	&__list {
-		width: 100%;
-		padding: 60px;
+		width: 85%;
+		margin: auto;
+		padding: 40px;
 		background-color: $htLightGreen;
 		list-style-type: none;
+		border-radius: 3%;
+		line-height: 2.2;
+		color: $htNewGreen2;
+		font-weight: 800;
 
 		@mixin atMedium {
 			text-align: center;
-			color: $htNewGreen2;
 			line-height: 2;
+			font-size: 1rem;
+			width: 75%;
+			/*padding: 30px;*/
+		}
+
+		@mixin atLarge {
 			font-size: 1.2rem;
-			font-weight: 800;
-			border-radius: 3%;
+			padding: 60px;
+			width: 100%;
 		}
 	}
 }

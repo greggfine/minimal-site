@@ -229,19 +229,30 @@ body {
 	}
 } 
 .credits__list {
-	width: 100%;
-	padding: 60px;
+	width: 85%;
+	margin: auto;
+	padding: 40px;
 	background-color: #C9DD4B;
 	list-style-type: none;
+	border-radius: 3%;
+	line-height: 2.2;
+	color: #474b4f;
+	font-weight: 800;
 } 
 @media (min-width: 800px) { 
 	.credits__list {
 		text-align: center;
-		color: #474b4f;
 		line-height: 2;
+		font-size: 1rem;
+		width: 75%; 
+		/*padding: 30px;*/
+	}
+} 
+@media (min-width: 1300px) { 
+	.credits__list {
 		font-size: 1.2rem;
-		font-weight: 800;
-		border-radius: 3%;
+		padding: 60px;
+		width: 100%;
 	}
 } 
 .credits::after {

@@ -5,8 +5,13 @@
 		padding-left: 20px;
 		padding-right: 20px;
 
+		@mixin atMedium {
+			margin-top: 45px;
+			margin-bottom: -10px;
+		}
+
 		@mixin atMedium-Small {
-			margin-top: 144px;
+			margin-top: 104px;
 			margin-bottom: -10px;
 		}
 	}

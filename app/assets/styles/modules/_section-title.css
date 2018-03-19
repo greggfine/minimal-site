@@ -30,11 +30,10 @@
 	}
 
 	&--contact {
-		margin-top: -55px;
+		
 		margin-bottom: 100px;
 		background-color: rgba(255, 255, 255, .85);
 		width: 150px;
-
 
 		@mixin atSmall {
 			width: 200px;
@@ -50,23 +49,62 @@
 	}
 
 	&--about {
-		margin-top: 130px;
+		margin-top: 60px;
 		color: $htMediumGreen;
+
+		@mixin atSmall {
+			margin-top: 100px;
+		}
+
+		@mixin atMedium {
+			margin-top: 130px;
+		}
+	}
+
+	&__video, &__audio {
+		margin-top: 60px;
+		margin-bottom: 20px;
+
+		@mixin atSmall{
+			margin-top: 20px;
+		}
+
+		@mixin atMedium {
+			margin-top: -30px;
+		}
+
+		@mixin atMedium-Large {
+			margin-top: -50px;
+		}
+	}
+
+	&__audio {
+		margin-bottom: 70px;
 	}
 
 	&__tutorials {
 		width: 160px;
+		margin-bottom: 60px;
 
 		@mixin atSmall {
 			width: 200px;
+			margin-top: -190px;
+			margin-bottom: 40px;
 		}
 
 		@mixin atMedium {
 			width: 250px;
+			margin-bottom: 30px;
+		}
+
+		@mixin atMedium-Small {
+			margin-bottom: 40px;
 		}
 
 		@mixin atLarge {
 			width: 300px;
+			margin-top: 0px;
+			margin-bottom: 140px;
 		}
 	}
 }

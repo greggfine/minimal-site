@@ -1,8 +1,21 @@
 .page-section {
 	margin-bottom: 60px;
-	padding-top: 60px;
+	padding-top: 0px;
 
 	@mixin atSmall {
+		padding-top: 30px;
+		margin-bottom: 100px;
+	}
+
+	@mixin atMedium {
+		padding-top: 120px;
+	}
+
+	@mixin atMedium-Small {
+		padding-top: 170px;
+	}
+
+	@mixin atLarge {
 		padding-top: 200px;
 		margin-bottom: 200px;
 	}

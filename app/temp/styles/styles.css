@@ -25,18 +25,30 @@ body {
 	width: 85%;
 	box-shadow: 4px 8px 10px 0px #000000d1;
 } 
+@media (min-width: 530px) { 
+	.about__image {
+		width: 80%;
+	}
+} 
 @media (min-width: 800px) { 
 	.about__image {
-		width: 50%;
+		width: 78%;
 		box-shadow: 12px 11px 10px 0px #000000d1;
 	}
 } 
-/*		@mixin atMedium-Large {
-			width: 50%;
-		}*/ 
+@media (min-width: 900px) { 
+	.about__image {
+		width: 66.5%;
+	}
+} 
+@media (min-width: 1100px) { 
+	.about__image {
+		width: 68%;
+	}
+} 
 @media (min-width: 1300px) { 
 	.about__image {
-		width: 65%;
+		width: 75%;
 	}
 } 
 .about__text-content {

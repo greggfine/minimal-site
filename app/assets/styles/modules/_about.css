@@ -12,17 +12,25 @@
 		width: 85%;
 		box-shadow: 4px 8px 10px 0px #000000d1;
 
+		@mixin atSmall {
+			width: 80%;
+		}
+
 		@mixin atMedium {
-			width: 50%;
+			width: 78%;
 			box-shadow: 12px 11px 10px 0px #000000d1;
 		}
 
-/*		@mixin atMedium-Large {
-			width: 50%;
-		}*/
+		@mixin atMedium-Small {
+			width: 66.5%;
+		}
+
+		@mixin atMedium-Large {
+			width: 68%;
+		}
 
 		@mixin atLarge {
-			width: 65%;
+			width: 75%;
 		}
 	}
 

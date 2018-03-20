@@ -2,7 +2,11 @@
 	text-decoration: none;
 	border: 1px solid #000;
 	color: $htDarkGreen;
-	padding: .75rem 2rem;
+	padding: .37rem 1rem;
 	margin-right: 20px;
 	margin-left: 20px;
+
+	@mixin atSmall {
+		padding: .75rem 2rem;
+	}
 }

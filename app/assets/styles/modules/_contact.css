@@ -1,32 +1,56 @@
 .contact {
-		margin: 200px auto;
+		margin: 120px auto;
 		text-align: center;
 		padding: 60px 0;
 		width: 100%;
-		height: 1000px;
+		height: 700px;
 		border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+
+		@mixin atSmall {
+			height: 1000px;
 		background: url('../../assets/images/unsplash/maite-tiscar-271141-unsplash.jpg') center left no-repeat;
 		/* Photo by Maite Tiscar on Unsplash */
 		background-size: cover;
 		background-color: $htMediumGrey;
 		background-blend-mode: color-dodge;
+		margin: 140px auto;
+		}
+
+		@mixin atMedium-Large {
+			margin: 220px auto;
+		}
 
 		&__form {
-			max-width: 600px;
-			margin: auto;
+			max-width: 400px;
+			margin-left: auto;
+			margin-right: auto;
+			/*margin-top: 100px;*/
 			display: flex;
 			flex-flow: column;
-			/*border: 10px solid red;*/
 			background-color: rgba(0, 0, 0, .7);
-			padding: 20px;
+			padding: 14px;
+
+			@mixin atSmall {
+				max-width: 600px;
+				margin-top: 0px;
+				padding: 20px;
+			}
+
+			@mixin atMedium-Small {
+				max-width: 700px;
+			}
 
 			input {
 				outline: none;
-				font-size: 1.5rem;
+				font-size: 1rem;
 				/*background-color: $htWhite;*/
 				padding: 10px;
 				/*border-radius: 7px;*/
 				margin-bottom: 20px;
+
+				@mixin atSmall {
+					font-size: 1.5rem;
+				}
 			}
 
 			::placeholder {
@@ -43,14 +67,23 @@
 			textarea {
 				outline: none;
 				color: $htMediumGreen;
-				font-size: 1.5rem;
+				font-size: 1rem;
 				margin-bottom: 20px;
+
+				@mixin atSmall {
+					font-size: 1.5rem;
+				}
 			}
 
 			input[type="submit"] {
-				padding: 1rem 2rem;
-				width: 200px;
+				padding: .5rem 1rem;
+				width: 140px;
 				margin: auto;
+
+				@mixin atSmall {
+					padding: 1rem 2rem;
+					width: 200px;
+				}
 			}
 		}
 }

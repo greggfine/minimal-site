@@ -30,17 +30,22 @@
 	}
 
 	&--contact {
-		
-		margin-bottom: 100px;
+
 		background-color: rgba(255, 255, 255, .85);
 		width: 150px;
 
 		@mixin atSmall {
 			width: 200px;
+			margin-top: 100px;
 		}
 
 		@mixin atMedium {
 			width: 250px;
+			margin-top: -10px;
+		}
+
+		@mixin atMedium-Small {
+			margin-top: -100px;
 		}
 
 		@mixin atLarge {

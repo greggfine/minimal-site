@@ -53,8 +53,8 @@ body {
 } 
 .about__text-content {
 	padding-top: 0px;
-	font-size: 1.25rem;
-	max-width: 300px;
+	font-size: 1rem;
+	max-width: 350px;
 	margin: auto; 
 	/*margin-bottom: -80px;*/
 	text-align: center;
@@ -63,7 +63,7 @@ body {
 } 
 @media (min-width: 530px) { 
 	.about__text-content {
-		font-size: 1.4rem;
+		font-size: 1.2rem;
 		max-width: 500px;
 		padding-top: 20px;
 	}
@@ -978,8 +978,8 @@ blockquote cite:before {
 	display: flex;
 	-ms-flex-flow: row wrap;
 	    flex-flow: row wrap;
-	-ms-flex-pack: justify;
-	    justify-content: space-between; 
+	-ms-flex-pack: center;
+	    justify-content: center; 
 	/*background-color: $htWhite;*/
 	padding-top: 0px;
 } 
@@ -990,6 +990,8 @@ blockquote cite:before {
 } 
 @media (min-width: 800px) { 
 	.video__grid {
+		-ms-flex-pack: justify;
+		    justify-content: space-between;
 		padding-top: 60px;
 	}
 } 

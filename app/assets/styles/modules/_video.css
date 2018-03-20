@@ -3,7 +3,7 @@
 	&__grid {
 		display: flex;
 		flex-flow: row wrap;
-		justify-content: space-between;
+		justify-content: center;
 		/*background-color: $htWhite;*/
 		padding-top: 0px;
 
@@ -12,6 +12,7 @@
 		}
 
 		@mixin atMedium {
+			justify-content: space-between;
 			padding-top: 60px;
 		}
 

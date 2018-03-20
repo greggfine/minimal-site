@@ -103,16 +103,17 @@ body {
 		margin-bottom: -10px;
 	}
 } 
-.btn {
+.btn-submit {
 	text-decoration: none;
 	border: 1px solid #000;
 	color: #61892f;
 	padding: .37rem 1rem;
 	margin-right: 20px;
 	margin-left: 20px;
+	background-color: #F5F5F5;
 } 
 @media (min-width: 530px) { 
-	.btn {
+	.btn-submit {
 		padding: .75rem 2rem;
 	}
 } 
@@ -257,6 +258,9 @@ body {
 		max-width: 1700px;
 	}
 } 
+.container__site { 
+	/*max-width: 100%;*/
+} 
 .credits {
 	background-image: url("./roberta-sorge-125543-unsplash.jpg");
 	background-size: cover;
@@ -380,7 +384,7 @@ body {
 	color: #C9DD4B;
 	text-decoration: none;
 } 
-.header {	
+.header  {	
 	color: #C9DD4B;
 	width: 100%;
 	letter-spacing: 0.2125rem;
@@ -416,9 +420,10 @@ body {
 	-ms-flex-align: center;
 	    align-items: center;
 	-ms-flex-pack: start;
-	    justify-content: flex-start;
+	    justify-content: flex-start; 
+	/*padding: 0.25rem;*/
+	height: 120px;
 } 
-/*padding: 0.25rem;*/ 
 @media (min-width: 530px) { 
 	.header__nav {
 		-ms-flex-pack: justify;
@@ -814,137 +819,94 @@ body {
 	color: #C9DD4B;
 	transform: scale(1.2);
 } 
-.testimonials{
-	overflow: hidden;
-	height: 375px;
-	background-color: #F5F5F5;
-	text-align: center;
-} 
-.testimonials figure div{
-	width: 20%;
-	float: left;
-} 
-.testimonials figure img{
-	width: 100%;
-	float: left;
-} 
-.testimonials figure{
-	position: relative;
-	width: 500%;
-	margin: 0;
-	left: 0;
-	animation: 70s slidy infinite;
-} 
-.testimonials h2 {
-	padding-top: 50px;
-	color: #61892f;
-	font-size: 1.8rem;
-} 
-.testimonials p {
-	max-width: 800px;
+.carousel {
+	width: 300px;
 	margin: 0 auto;
-	font-style: italic;
-	margin-bottom: 0px;
+	padding-bottom: 50px;
 } 
-@keyframes slidy {
-	0% {
-		left: 0;
-	}
-	10% {
-		left: 0;
-	}
-
-	12% {
-		left: -100%;
-	}
-
-	22% {
-		left: -100%;
-	}
-
-	24% {
-		left: -200%;
-	}
-
-	34% {
-		left: -200%;
-	}
-
-	36% {
-		left: -300%;
-	}
-
-	46% {
-		left: -300%;
-	}
-
-	48% {
-		left: -400%;
-	}
-
-	58% {
-		left: -400%;
-	}
-
-	60% {
-		left: -300%;
-	}
-
-	70% {
-		left: -300%;
-	}
-
-	72% {
-		left: -200%;
-	}
-
-	82% {
-		left: -200%;
-	}
-
-	84% {
-		left: -100%;
-	}
-
-	94% {
-		left: -100%;
-	}
-
-	96% {
-		left: 0%;
+@media (min-width: 530px) { 
+	.carousel {
+		width: 450px;
 	}
 } 
-blockquote {
-    font-family: Georgia, serif;
-    font-size: 18px;
-    font-style: italic;
-    width: 800px;
-    /*margin: 0.25em 0;*/
-    margin: 0 auto;
-    padding: 0.35em 40px;
-    line-height: 1.85;
-    position: relative;
-    color: #383838;
-    text-align: left;
+@media (min-width: 800px) { 
+	.carousel {
+		width: 650px;
+	}
 } 
-blockquote:before {
-    display: block;
-    padding-left: 10px;
-    content: "\201C";
-    font-size: 80px;
-    position: absolute;
-    left: -20px;
-    top: -20px;
-    color: #7a7a7a;
+.carousel .item {
+	color: #999;
+	font-size: 18px;
+    text-align: center;
+	overflow: hidden;
+    min-height: 340px;
 } 
-blockquote cite {
-    color: #999999;
-    font-size: 14px;
-    display: block;
-    margin-top: 5px;
+.carousel .item a {
+	color: #C9DD4B;
 } 
-blockquote cite:before {
-    content: "\2014 \2009";
+.carousel .img-box {
+	width: 145px;
+	height: 145px;
+	margin: 0 auto;
+	border-radius: 50%;
+} 
+.carousel .img-box img {
+	width: 100%;
+	height: 100%;
+	display: block;
+	border-radius: 50%;
+} 
+.carousel .testimonial {	
+	padding: 30px 0 10px;
+} 
+.carousel .overview {	
+	text-align: center;
+	padding-bottom: 5px;
+} 
+.carousel .overview b {
+	color: #333;
+	font-size: 15px;
+	text-transform: uppercase;
+	display: block;	
+	padding-bottom: 5px;
+} 
+.carousel .carousel-control {
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+    background-color: #474b4f;
+    text-shadow: none;
+	top: 4px;
+} 
+.carousel-control i {
+	font-size: 20px;
+	margin-right: 2px;
+} 
+.carousel-control.left {
+	left: auto;
+	right: 40px;
+} 
+.carousel-control.right i {
+	margin-right: -2px;
+} 
+.carousel .carousel-indicators {
+	bottom: 15px;
+} 
+.carousel-indicators li, .carousel-indicators li.active {
+	width: 11px;
+	height: 11px;
+	margin: 1px 5px;
+	border-radius: 50%;
+} 
+.carousel-indicators li {	
+	background: #999999;
+	/*background: #e2e2e2;*/
+	border-color: transparent;
+} 
+.carousel-indicators li.active {
+	border: none;
+	background: #C9DD4B;		
+	/*background: #888;		*/
 } 
 .tutorials__wrapper {
 	width: 75vw;

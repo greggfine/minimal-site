@@ -18,6 +18,11 @@
 				margin: 10px 0px;
 			}
 
+			img {
+				width: 280px;
+				border-radius: 10px;
+			}
+
 		@mixin atSmall {
 			flex-flow: row wrap;
 			justify-content: space-around;

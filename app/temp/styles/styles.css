@@ -954,6 +954,10 @@ blockquote cite:before {
 .tutorials__course-grid a {
 	margin: 10px 0px;
 } 
+.tutorials__course-grid img {
+	width: 280px;
+	border-radius: 10px;
+} 
 @media (min-width: 530px) { 
 	.tutorials__course-grid {
 		-ms-flex-flow: row wrap;

@@ -307,9 +307,19 @@ body {
 } 
 .divider {
 
-	height: 235px;
+	height: 135px;
 	position: relative;
 	z-index: 1;
+} 
+@media (min-width: 900px) { 
+	.divider {
+		height: 200px;
+	}
+} 
+@media (min-width: 1100px) { 
+	.divider {
+		height: 235px;
+	}
 } 
 .divider--first {
 	background: url('../../assets/images/unsplash/roberta-sorge-125543-unsplash.jpg') 50% 50% no-repeat; 
@@ -990,14 +1000,22 @@ blockquote cite:before {
 } 
 @media (min-width: 800px) { 
 	.video__grid {
-		-ms-flex-pack: justify;
-		    justify-content: space-between;
+		-ms-flex-pack: center;
+		    justify-content: center;
 		padding-top: 60px;
 	}
 } 
 @media (min-width: 900px) { 
 	.video__grid {
+		-ms-flex-pack: distribute;
+		    justify-content: space-around;
 		padding-top: 120px;
+	}
+} 
+@media (min-width: 1100px) { 
+	.video__grid {
+		-ms-flex-pack: justify;
+		    justify-content: space-between;
 	}
 } 
 .video__wrapper {
@@ -1015,6 +1033,17 @@ blockquote cite:before {
 } 
 .video__item {
 	margin: 40px;
+	width: 320px;
+} 
+@media (min-width: 530px) { 
+	.video__item {
+		width: 400px;
+	}
+} 
+@media (min-width: 800px) { 
+	.video__item {
+		width: 320px;
+	}
 } 
 .reveal-item {
 	opacity: 0;

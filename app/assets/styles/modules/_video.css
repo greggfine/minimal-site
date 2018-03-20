@@ -12,12 +12,17 @@
 		}
 
 		@mixin atMedium {
-			justify-content: space-between;
+			justify-content: center;
 			padding-top: 60px;
 		}
 
 		@mixin atMedium-Small {
+			justify-content: space-around;
 			padding-top: 120px;
+		}
+
+		@mixin atMedium-Large {
+			justify-content: space-between;
 		}
 	}
 
@@ -38,5 +43,14 @@
 
 	&__item {
 		margin: 40px;
+		width: 320px;
+
+		@mixin atSmall {
+			width: 400px;
+		}
+
+		@mixin atMedium {
+			width: 320px;
+		}
 	}
 }

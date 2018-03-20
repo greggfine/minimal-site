@@ -1,8 +1,18 @@
 .divider {
 
-	height: 235px;
+	height: 135px;
 	position: relative;
 	z-index: 1;
+
+
+
+	@mixin atMedium-Small{
+		height: 200px;
+	}
+
+	@mixin atMedium-Large{
+		height: 235px;
+	}
 
 	&--first {
 		background: url('../../assets/images/unsplash/roberta-sorge-125543-unsplash.jpg') 50% 50% no-repeat;

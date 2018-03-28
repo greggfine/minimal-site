@@ -35,11 +35,12 @@
 		align-items: center;
 		justify-content: flex-start;	
 		/*padding: 0.25rem;*/
-	height: 120px;
+		height: 100px;
 
 	
 		@mixin atSmall {
 			justify-content: space-between;
+			height: 120px;
 
 		}
 
@@ -63,20 +64,21 @@
 	&__title {
 		flex: 0 0 100px;
 		font-size: 1.47rem;
-		letter-spacing: 6px;
+		letter-spacing: 2px;
 		font-weight: 400;
-		/*padding-left: 0px;*/
+		padding-left: 20px;
 
 		@mixin atSmall {
 			flex: 0 0 400px;
 			font-size: 1.8rem;
-			padding-left: 80px;
+			padding-left: 60px;
+			letter-spacing: 4.5px;
 			/*text-align: center;*/
 		}
 		
 		@mixin atMedium-Small {
 			padding-left: 0px;
-
+			letter-spacing: 6px;
 		}
 
 		@mixin atMedium-Large {
@@ -99,14 +101,20 @@
 		font-weight: 200;
 		/*color: $htWhite;*/
 		color: #c0bdbd;
-		font-size: 2.2rem;	
+		font-size: 1.5rem;
+		letter-spacing: 2px;	
 
 		@mixin atSmall{
-			font-size: 1.5rem;
+			font-size: 1.7rem;
+			letter-spacing: 4.5px;
+		}
+
+		@mixin atMedium-Small {
+			letter-spacing: 6px;
 		}
 
 		@mixin atMedium-Large {
-			font-size: 1.7rem;
+			font-size: 1.8rem;
 		}
 
 		@mixin atLarge{
@@ -167,8 +175,8 @@
 		width: 80px;
 		height: 19px;
 		position: absolute;
-		top: 40px;
-		right: 20px;
+		top: 35px;
+		right: -30px;
 
 		&::before {
 			content: "";
@@ -221,9 +229,19 @@
 			}
 		}
 
+		@mixin atSmall {
+			right: 0px;
+			top: 45px;
+		}
+
+		@mixin atMedium {
+			right: 20px;
+		}
+
 		@mixin atMedium-Small {
 			display: none;
 		}
+		
 
 	}
 }

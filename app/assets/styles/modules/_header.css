@@ -148,7 +148,7 @@
 	}
 
 	&__menu-item-anchor {
-		text-decoration: none;
+		text-decoration: none !important;
 		color: $htWhite;
 		transition: color 100ms;
 

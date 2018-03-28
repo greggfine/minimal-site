@@ -530,7 +530,7 @@ body {
 	display: inline-block;
 } 
 .header__menu-item-anchor {
-	text-decoration: none;
+	text-decoration: none !important;
 	color: #F5F5F5;
 	transition: color 100ms;
 } 

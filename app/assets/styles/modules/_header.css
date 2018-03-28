@@ -9,13 +9,37 @@
 		position: fixed;
 	}
 
+	&__spacing {
+		/*border: 5px solid red;*/
+	}
+
+	&__spacing2 {
+		display: flex;
+		justify-content: flex-end;
+		width: 100%;
+		/*padding-right: 40px;*/
+
+		@mixin atSmall {
+			padding-right: 0px;
+		}
+
+		@mixin atMedium {
+			padding-right: 70px;
+		}
+
+		@mixin atMedium-Small {
+			padding-right: 100px;
+		}
+
+		/*border: 5px solid red;*/
+	}
+
 	&--is-expanded {
 		/*color: red;*/
 	}
 
 	&__menu {
 		display: none;
-		/*animation: fadeIn 2s ease-in;*/
 
 		@mixin atMedium-Small {
 			display: block;
@@ -31,17 +55,12 @@
 	&__nav {
 		background-color: $htBlackOpacity;
 		display: flex;
-		flex-flow: row nowrap;
-		align-items: center;
-		justify-content: flex-start;	
-		/*padding: 0.25rem;*/
-		height: 100px;
-
+		justify-content: center;
+		
 	
 		@mixin atSmall {
 			justify-content: space-between;
 			height: 120px;
-
 		}
 
 		@mixin atMedium-Small {
@@ -55,6 +74,18 @@
 
 	&__full-title {
 		animation: fadeIn 1.5s;
+		margin-left: -40px;
+
+		@mixin atSmall {
+			padding-left: 0px;
+		}
+
+		@mixin atMedium {
+			padding-left: 60px;
+		}
+		@mixin atMedium-Small {
+			padding-left: 100px;
+		}
 	}
 
 
@@ -73,7 +104,6 @@
 			font-size: 1.8rem;
 			padding-left: 60px;
 			letter-spacing: 4.5px;
-			/*text-align: center;*/
 		}
 		
 		@mixin atMedium-Small {
@@ -90,16 +120,8 @@
 		}
 	}
 
-
-
-
-
-
-
-
 	&__title-guitar {
 		font-weight: 200;
-		/*color: $htWhite;*/
 		color: #c0bdbd;
 		font-size: 1.5rem;
 		letter-spacing: 2px;	
@@ -123,18 +145,13 @@
 	}
 
 	&__menu-item {
-		display: inline;
-		/*padding: 1.25rem;*/
-		/*font-size: 1.15rem;*/
+		/*display: inline;*/
 		font-weight: 200;
 
 		@mixin atMedium {
 			font-size: 0.9rem;
 			padding: .4rem;
 		}
-
-
-
 
 		@mixin atMedium-Large {
 			font-size: 1rem;
@@ -248,9 +265,6 @@
 
 
 
-
-
-
 @keyframes fadeIn {
 	0% {
 		opacity: 0;
@@ -259,4 +273,14 @@
 		opacity: 1;
 	}
 }
+
+
+.fa-reorder {
+	color: #fff;
+}
+
+button.navbar-toggler {
+	outline: none;
+}
+
 

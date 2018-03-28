@@ -10785,7 +10785,7 @@
 			this.headerTriggerElement = (0, _jquery2.default)(".about");
 			this.createHeaderWaypoint();
 			this.pageSections = (0, _jquery2.default)(".page-section");
-			this.headerLinks = (0, _jquery2.default)(".header__menu a");
+			this.headerLinks = (0, _jquery2.default)(".navbar-nav a");
 			this.createPageSectionWaypoints();
 			this.addSmoothScrolling();
 		}

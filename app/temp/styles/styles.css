@@ -123,10 +123,10 @@ body {
 		padding: 60px 0;
 		width: 100%;
 		height: 700px;
-		border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 } 
 @media (min-width: 530px) { 
 	.contact {
+		border-bottom: 1px solid #999999;
 		height: 1000px;
 		background: url('../../assets/images/unsplash/maite-tiscar-271141-unsplash.jpg') center left no-repeat; 
 		/* Photo by Maite Tiscar on Unsplash */
@@ -224,43 +224,38 @@ body {
 		width: 200px;
 	}
 } 
-.container {
+/*.container {
 
 	width: 700px;
 	margin: auto;
-} 
-@media (min-width: 530px) { 
-	.container {
+
+	@mixin atSmall {
 		width: 1200px;
 		margin: auto;
 	}
-} 
-.container--large {
-	margin: auto;
-} 
-@media (min-width: 900px) { 
-	.container--large {
-		max-width: 500px;
+
+	&--large {
+		margin: auto;
+
+		@mixin atMedium-Small {
+			max-width: 500px;
+		}
+
+		@mixin atMedium {
+			max-width: 1200px;
+		}
+
+		@mixin atLarge {
+			max-width: 1500px;
+		}
+
+		@mixin atExtra-Large {
+			max-width: 1700px;
+		}
 	}
-} 
-@media (min-width: 800px) { 
-	.container--large {
-		max-width: 1200px;
-	}
-} 
-@media (min-width: 1300px) { 
-	.container--large {
-		max-width: 1500px;
-	}
-} 
-@media (min-width: 1800px) { 
-	.container--large {
-		max-width: 1700px;
-	}
-} 
-.container__site { 
-	/*max-width: 100%;*/
-} 
+
+
+}*/ 
 .credits {
 	background-image: url("./roberta-sorge-125543-unsplash.jpg");
 	background-size: cover;
@@ -363,11 +358,13 @@ body {
 	padding: 20px;
 	font-size: .9rem;
 	letter-spacing: 1.3px;
+	line-height: .7;
 } 
 @media (min-width: 530px) { 
 	.footer {
 		max-width: 100%;
 		margin-top: -70px;
+		line-height: 1.3;
 	}
 } 
 @media (min-width: 800px) { 
@@ -396,13 +393,39 @@ body {
 		position: fixed;
 	}
 } 
+.header__spacing { 
+	/*border: 5px solid red;*/
+} 
+.header__spacing2 {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-pack: end;
+	    justify-content: flex-end;
+	width: 100%; 
+	/*border: 5px solid red;*/
+} 
+/*padding-right: 40px;*/ 
+@media (min-width: 530px) { 
+	.header__spacing2 {
+		padding-right: 0px;
+	}
+} 
+@media (min-width: 800px) { 
+	.header__spacing2 {
+		padding-right: 70px;
+	}
+} 
+@media (min-width: 900px) { 
+	.header__spacing2 {
+		padding-right: 100px;
+	}
+} 
 .header--is-expanded { 
 	/*color: red;*/
 } 
 .header__menu {
 	display: none;
 } 
-/*animation: fadeIn 2s ease-in;*/ 
 @media (min-width: 900px) { 
 	.header__menu {
 		display: block;
@@ -415,14 +438,8 @@ body {
 	background-color: rgba(0, 1, 0, 0.96);
 	display: -ms-flexbox;
 	display: flex;
-	-ms-flex-flow: row nowrap;
-	    flex-flow: row nowrap;
-	-ms-flex-align: center;
-	    align-items: center;
-	-ms-flex-pack: start;
-	    justify-content: flex-start; 
-	/*padding: 0.25rem;*/
-	height: 100px;
+	-ms-flex-pack: center;
+	    justify-content: center;
 } 
 @media (min-width: 530px) { 
 	.header__nav {
@@ -445,6 +462,22 @@ body {
 } 
 .header__full-title {
 	animation: fadeIn 1.5s;
+	margin-left: -40px;
+} 
+@media (min-width: 530px) { 
+	.header__full-title {
+		padding-left: 0px;
+	}
+} 
+@media (min-width: 800px) { 
+	.header__full-title {
+		padding-left: 60px;
+	}
+} 
+@media (min-width: 900px) { 
+	.header__full-title {
+		padding-left: 100px;
+	}
 } 
 .header__title {
 	-ms-flex: 0 0 100px;
@@ -460,8 +493,7 @@ body {
 		    flex: 0 0 400px;
 		font-size: 1.8rem;
 		padding-left: 60px;
-		letter-spacing: 4.5px; 
-		/*text-align: center;*/
+		letter-spacing: 4.5px;
 	}
 } 
 @media (min-width: 900px) { 
@@ -481,8 +513,7 @@ body {
 	}
 } 
 .header__title-guitar {
-	font-weight: 200; 
-	/*color: $htWhite;*/
+	font-weight: 200;
 	color: #c0bdbd;
 	font-size: 1.5rem;
 	letter-spacing: 2px;
@@ -508,10 +539,8 @@ body {
 		font-size: 2.2rem;
 	}
 } 
-.header__menu-item {
-	display: inline; 
-	/*padding: 1.25rem;*/ 
-	/*font-size: 1.15rem;*/
+.header__menu-item { 
+	/*display: inline;*/
 	font-weight: 200;
 } 
 @media (min-width: 800px) { 
@@ -624,6 +653,12 @@ body {
 	100% {
 		opacity: 1;
 	}
+} 
+.fa-reorder {
+	color: #fff;
+} 
+button.navbar-toggler {
+	outline: none;
 } 
 .instruments {	
 	background-color: #61892f;
@@ -828,8 +863,13 @@ body {
 } 
 .social-icons__icon {
 	color: #61892f;
-	padding: 0px 20px 50px 20px;
+	padding: 0px 15px 50px 15px;
 	font-size: 1.5rem;
+} 
+@media (min-width: 530px) { 
+	.social-icons__icon {
+		padding: 0px 20px 50px 20px;
+	}
 } 
 @media (min-width: 800px) { 
 	.social-icons__icon {

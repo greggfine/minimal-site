@@ -4,8 +4,12 @@
 	
 	&__icon {
 		color: $htDarkGreen;
-		padding: 0px 20px 50px 20px;
+		padding: 0px 15px 50px 15px;
 		font-size: 1.5rem;
+
+		@mixin atSmall {
+			padding: 0px 20px 50px 20px;
+		}
 
 		@mixin atMedium {
 			font-size: 2rem;

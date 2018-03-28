@@ -9,7 +9,7 @@ class StickyHeader {
 		this.headerTriggerElement = $(".about");
 		this.createHeaderWaypoint();
 		this.pageSections = $(".page-section");
-		this.headerLinks = $(".header__menu a");
+		this.headerLinks = $(".navbar-nav a");
 		this.createPageSectionWaypoints();
 		this.addSmoothScrolling();
 	}

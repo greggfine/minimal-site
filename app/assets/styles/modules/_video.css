@@ -6,6 +6,8 @@
 		justify-content: center;
 		/*background-color: $htWhite;*/
 		padding-top: 0px;
+/*		max-width: 1570px;
+		margin: auto;*/
 
 		@mixin atSmall {
 			padding-top: 20px;

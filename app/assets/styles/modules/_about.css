@@ -7,6 +7,15 @@
 	padding-top: 100px;
 	/*padding-bottom: 60px;*/
 
+	&__link {
+		color: $htDarkGreen;
+	}
+
+	&__link:hover {
+		color: $htLightGreen;
+		text-decoration: none;
+	}
+
 	&__image {
 		margin-top: 60px;
 		width: 85%;

@@ -20,6 +20,13 @@ body {
 	padding-top: 100px;
 } 
 /*padding-bottom: 60px;*/ 
+.about__link {
+	color: #61892f;
+} 
+.about__link:hover {
+	color: #C9DD4B;
+	text-decoration: none;
+} 
 .about__image {
 	margin-top: 60px;
 	width: 85%;
@@ -116,6 +123,19 @@ body {
 	.btn-submit {
 		padding: .75rem 2rem;
 	}
+} 
+.btn-inst-list {
+	
+	padding: 1em 2em;
+	font-size: 1.1em;
+	border-radius: 7px;
+	color: #1D1D1D;
+	background-color: #C9DD4B;
+} 
+.btn-inst-list:hover {
+
+	background-color: #1D1D1D;
+	color: #C9DD4B;
 } 
 .contact {
 		margin: 120px auto;

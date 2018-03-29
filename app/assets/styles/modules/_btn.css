@@ -11,3 +11,19 @@
 		padding: .75rem 2rem;
 	}
 }
+
+.btn-inst-list {
+	
+	padding: 1em 2em;
+	font-size: 1.1em;
+	border-radius: 7px;
+	color: $htDarkGrey;
+	background-color: $htLightGreen;
+}
+
+.btn-inst-list:hover {
+
+	background-color: $htDarkGrey;
+	color: $htLightGreen;
+}
+

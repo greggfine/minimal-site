@@ -123,39 +123,25 @@
 	<section class="video page-section container--large" data-matching-link="#video-link" id="video">
 		<h1 class="section-title section-title__video">VIDEO</h1>
 		<div class="video__grid">
-			
-			<div class="video__wrapper">
-				<iframe class="video__item" width="320" height="205" src="https://www.youtube.com/embed/EA0JYNSJKAY?modestbranding=0&showinfo=0&rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
-				</iframe>
-			</div>
-			
-			<div class="video__wrapper">
-				<iframe class="video__item" width="320" height="205" src="https://www.youtube.com/embed/6Zbqbd1O_oA?modestbranding=0&showinfo=0&rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-			</div>
-			<div class="video__wrapper">
-				<iframe class="video__item" width="320" height="205" src="https://www.youtube.com/embed/hmnf3_t9Dog?modestbranding=0&showinfo=0&rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-			</div>
-			<div class="video__wrapper">
-				<iframe class="video__item" width="320" height="205" src="https://www.youtube.com/embed/P7nYDHBpzP4?modestbranding=0&showinfo=0&rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-			</div>
-			<div class="video__wrapper">
-				<iframe class="video__item" width="320" height="205" src="https://www.youtube.com/embed/EhBO3eyZEfw?modestbranding=0&showinfo=0&rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-			</div>
-			<div class="video__wrapper">
-				<iframe class="video__item" width="320" height="205" src="https://www.youtube.com/embed/HyKseQJLCmk?modestbranding=0&showinfo=0&rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-			</div>
-			<div class="video__wrapper">
-				<iframe class="video__item" width="320" height="205" src="https://www.youtube.com/embed/HyKseQJLCmk?modestbranding=0&showinfo=0&rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-			</div>
-			<div class="video__wrapper">
-				<iframe class="video__item" width="320" height="205" src="https://www.youtube.com/embed/jhfAVspcgr8?modestbranding=0&showinfo=0&rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-			</div>
-			<div class="video__wrapper">
-				<iframe class="video__item" width="320" height="205" src="https://www.youtube.com/embed/7KEmz3SAogg?modestbranding=0&showinfo=0&rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-			</div>
+				<div class="video__wrapper youtube-player video__item" data-id="EA0JYNSJKAY"></div>
+
+				<div class="video__wrapper youtube-player video__item" data-id="6Zbqbd1O_oA"></div>
+
+				<div class="video__wrapper youtube-player video__item" data-id="hmnf3_t9Dog"></div>
+
+				<div class="video__wrapper youtube-player video__item" data-id="P7nYDHBpzP4"></div>
+
+				<div class="video__wrapper youtube-player video__item" data-id="EhBO3eyZEfw"></div>
+
+				<div class="video__wrapper youtube-player video__item" data-id="HyKseQJLCmk"></div>
+
+				<div class="video__wrapper youtube-player video__item" data-id="jhfAVspcgr8"></div>
+
+				<div class="video__wrapper youtube-player video__item" data-id="7KEmz3SAogg"></div>
 	
 		</div>
-	</section><!-- END VIDEO -->
+	</section>
+	<!-- END VIDEO -->
 	
 	<div class="divider divider--second"></div>
 	
@@ -296,6 +282,50 @@
 	<!-- build:js assets/scripts/App.js -->
 	<script src="/temp/scripts/App.js"></script>
 	<!-- endbuild -->
+
+
+	<script>
+
+	    /* Light YouTube Embeds by @labnol */
+	    /* Web: http://labnol.org/?p=27941 */
+
+	    document.addEventListener("DOMContentLoaded",
+	        function() {
+	            var div, n,
+	                v = document.getElementsByClassName("youtube-player");
+	            for (n = 0; n < v.length; n++) {
+	                div = document.createElement("div");
+	                div.setAttribute("data-id", v[n].dataset.id);
+	                div.innerHTML = labnolThumb(v[n].dataset.id);
+	                div.onclick = labnolIframe;
+	                v[n].appendChild(div);
+	            }
+	        });
+
+	    function labnolThumb(id) {
+	        var thumb = '<img src="https://i.ytimg.com/vi/ID/hqdefault.jpg" style="width: 320px; height: 205px">',
+	            play = '<div class="play"></div>';
+	        return thumb.replace("ID", id) + play;
+	    }
+
+	    function labnolIframe() {
+	        var iframe = document.createElement("iframe");
+	        iframe.style.width="320px";
+	        iframe.style.height="205px";
+	        var embed = "https://www.youtube.com/embed/ID?autoplay=1&showinfo=1&allowfullscreen=0&rel=0&controls=1";
+	        iframe.setAttribute("src", embed.replace("ID", this.dataset.id));
+	        iframe.setAttribute("frameborder", "0");
+	        // iframe.setAttribute("allow", "autoplay");
+	        // iframe.setAttribute("allow", "encrypted-media");
+	        this.parentNode.replaceChild(iframe, this);
+
+	        
+	        // frameborder="0" allow="autoplay; encrypted-media" allowfullscreen
+	    }
+
+	</script>
+
+
 </body>
 </html>
 

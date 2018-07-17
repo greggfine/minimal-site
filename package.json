@@ -7,9 +7,6 @@
     "normalize.css": "^4.1.1",
     "waypoints": "^4.0.0"
   },
-  "scripts": {
-    "start": "node App-42dcde9280.js"
-  },
   "devDependencies": {
     "autoprefixer": "^6.3.6",
     "babel-core": "^6.10.4",
